@@ -1,0 +1,6 @@
+# Keep experiment inputs, source fingerprints and archived transcripts byte-identical on Windows.
+* -text
+*.md text eol=lf
+*.png binary
+*.pdf binary
+*.pptx binary

@@ -1,0 +1,11 @@
+{
+  "question_id": "financebench_id_03031",
+  "question": "What is Lockheed Martin's FY2021 net working capital? Define net working capital as total current assets less total current liabilities. Answer in USD millions. Respond to the question by assuming the perspective of an investment analyst who can only use the details shown within the balance sheet.",
+  "official_answer": "$5818.00",
+  "unit": "USD millions",
+  "doc_name": "LOCKHEEDMARTIN_2021_10K",
+  "evidence_page_index": 67,
+  "pdf_page": 68,
+  "source": "https://raw.githubusercontent.com/patronus-ai/financebench/cc39aeb4afdf33909ee1412188bf89035950c2eb/data/financebench_open_source.jsonl",
+  "pdf_source": "https://raw.githubusercontent.com/patronus-ai/financebench/cc39aeb4afdf33909ee1412188bf89035950c2eb/pdfs/LOCKHEEDMARTIN_2021_10K.pdf"
+}

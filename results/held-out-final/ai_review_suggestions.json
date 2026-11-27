@@ -1,0 +1,340 @@
+{
+  "provenance": "AI-assisted post-run analysis; not team-signed human review. English translation of the post-run notes.",
+  "run_sha256": "3f38f2a888b4d273889dac79a60628bb36937d26963879298d2b57f9dc609ec5",
+  "scope": "41 submitted retrieval-based answers on the frozen held-out run",
+  "counts": {
+    "has_counterexample": 37,
+    "supported_on_all_dimensions": 3,
+    "unresolved": 1
+  },
+  "records": [
+    {
+      "key": "B1/financebench_id_02608",
+      "year": null,
+      "line_item": false,
+      "unit": false,
+      "reason": "On PDF page 81, 1,207, 807 and 1,246 are in the FY2017, FY2016 and FY2015 columns. The other cited page (96) is an exhibit index and cannot confirm a year. Page 81 reports income from continuing operations. The requested ratios use net income attributable to shareholders (1,228, 897 and 1,233 on page 56), divided by revenue for each year. The answer labels the mean margin in percentage points. The requested unit is percent.",
+      "focus": "Only the first source identifies a year. The second contains no financial table."
+    },
+    {
+      "key": "B1/financebench_id_02981",
+      "year": true,
+      "line_item": false,
+      "unit": false,
+      "reason": "The operating profits of 2,112, 509 and 1,306 on PDF page 65 belong to FY2021, FY2020 and FY2019. The answer uses these numerators but omits annual net sales of 14,082, 11,303 and 11,503 on the same page. The mean of the three operating margins is about 10.285%. The answer reports 0.2 percentage points.",
+      "focus": ""
+    },
+    {
+      "key": "B1/financebench_id_03069",
+      "year": true,
+      "line_item": false,
+      "unit": false,
+      "reason": "On PDF page 60, depreciation and amortization of 167 and the net loss of (660) both appear in the FY2015 column. The denominator for the requested depreciation and amortization margin is net revenue of 3,991 on page 56. The model uses 660 and labels the result in percentage points. The question asks for a percentage.",
+      "focus": ""
+    },
+    {
+      "key": "B1/financebench_id_03282",
+      "year": true,
+      "line_item": false,
+      "unit": false,
+      "reason": "On PDF page 45, both 5,466,312 and 4,173,041 are in the FY2017 column. The first figure is total current liabilities. The second is current content liabilities, the label used in the answer's only citation for the total. The table reports USD thousands, so total current liabilities are USD 5,466.312 million. The model converts to USD 5,466,312,000 and labels that value in millions.",
+      "focus": ""
+    },
+    {
+      "key": "B1/financebench_id_03620",
+      "year": true,
+      "line_item": false,
+      "unit": true,
+      "reason": "PDF page 64 reports FY2022 net income of 8,978 and depreciation and amortization of 2,763, both in USD millions. The model adds them to obtain 11,741 and retains the table's scale. The question calls for operating profit of 11,512 on page 62, plus 2,763, less capital expenditure of 5,207 on page 64.",
+      "focus": ""
+    },
+    {
+      "key": "B1/financebench_id_03838",
+      "year": false,
+      "line_item": false,
+      "unit": false,
+      "reason": "PDF page 22 lists net income of USD 213.1 million for FY2020 and USD 375.4 million for FY2019. The model reverses their years and describes them as revenue. Total revenue on page 86 is 9,497,578 and 4,713,500 in USD thousands for those years. The question asks for year-over-year percentage growth. The answer reports percentage points.",
+      "focus": ""
+    },
+    {
+      "key": "B1/financebench_id_04171",
+      "year": true,
+      "line_item": false,
+      "unit": false,
+      "reason": "The figure of 24,146 on PDF page 176 belongs to FY2018. It is the annual change in accounts payable and accrued liabilities on CityCenter Holdings' cash flow statement, in USD thousands. MGM's consolidated balance sheet on page 57 gives ending accounts payable of USD 302,578 thousand. The model labels 24,146 in millions.",
+      "focus": ""
+    },
+    {
+      "key": "B1/financebench_id_04209",
+      "year": null,
+      "line_item": false,
+      "unit": true,
+      "reason": "PDF page 38 lists total assets of 59,268 and 55,556, and current assets of 29,505 and 28,120, all in USD millions. The answer gives the requested FY2021 total of 59,268 using the correct scale. It also cites the current-assets row, which is extraneous. Both raw-number fields copy both the FY2021 and FY2020 columns, so neither citation identifies a single year.",
+      "focus": "For team review: does quoting both columns establish year attribution when the final value selects the requested year?"
+    },
+    {
+      "key": "B1/financebench_id_04254",
+      "year": true,
+      "line_item": true,
+      "unit": true,
+      "reason": "PDF page 86 reports FY2021 operating income of 1,196. Page 69 restates FY2021 depreciation and amortization of 636, also reported on the cash flow statement on page 88. Both figures are in USD millions. Their sum, 1,832, matches the submitted amount and unit.",
+      "focus": ""
+    },
+    {
+      "key": "B1/financebench_id_04784",
+      "year": true,
+      "line_item": false,
+      "unit": false,
+      "reason": "The margins of 5.2% and 5.3% on PDF page 35 correspond to FY2019 and FY2018 for the Walmart U.S. segment. The question asks about Walmart as a whole. The consolidated figures are on page 48. The difference between margins is measured in percentage points. The model labels the change of −0.1 as percent.",
+      "focus": ""
+    },
+    {
+      "key": "B1/financebench_id_04980",
+      "year": true,
+      "line_item": false,
+      "unit": true,
+      "reason": "PDF page 54 states that net property, plant and equipment increased by 1.0 in 2021 relative to the prior year. The footnote reports amounts in USD billions, consistent with the year and scale used for 1.0 in the answer. The question asks for capital expenditure. The cash flow statement on page 63 reports capital spending of (4,625) in USD millions, an expenditure of USD 4.625 billion.",
+      "focus": ""
+    },
+    {
+      "key": "B1/financebench_id_05718",
+      "year": true,
+      "line_item": true,
+      "unit": true,
+      "reason": "PDF page 106 reports cash dividends of USD 389 million, 353 million and 319 million for FY2020, FY2019 and FY2018. The model selects 389 for FY2020 and reports it in millions, equivalent to USD 0.389 billion. Page 86 also supports this figure. The official reference is USD 0.40 billion, more than 1% away from the filing figure.",
+      "focus": "Retain the disagreement between the published reference and the financial statement in the report."
+    },
+    {
+      "key": "B1/financebench_id_07661",
+      "year": null,
+      "line_item": false,
+      "unit": null,
+      "reason": "PDF page 74 reports FY2020 operating cash flow of USD 381,603 thousand, equivalent to the submitted USD 381.603 million. The second figure, 9,186,440 on page 138, is FY2020 U.S. revenue and is unrelated. The third citation uses “no data” as its raw number on page 134, so its year and unit cannot be verified.",
+      "focus": "The two identifiable figures are both from 2020 and reported in USD thousands. The third citation supplies no operand, leaving the overall year and unit unresolved."
+    },
+    {
+      "key": "B1/financebench_id_10285",
+      "year": true,
+      "line_item": true,
+      "unit": true,
+      "reason": "The net property, plant and equipment table on PDF page 85 gives totals of 12,645 for FY2018 and 12,672 for FY2017. Accumulated depreciation of (18,568) and FY2018 depreciation expense of 1,556 are also consistent with the explanation. The balance sheet on page 52 repeats the net amount. The submitted 12,645 in USD millions agrees with the requested year, line item and scale.",
+      "focus": ""
+    },
+    {
+      "key": "B2/financebench_id_02981",
+      "year": true,
+      "line_item": false,
+      "unit": false,
+      "reason": "PDF page 65 reports operating profits of USD 1,306 million, 509 million and 2,112 million for FY2019, FY2020 and FY2021. The three final citations supply only the numerators. Net sales appear in intermediate text, but the model never forms the annual ratios. The question asks for the mean operating margin across the three years. The answer reports 0.2 percentage points.",
+      "focus": ""
+    },
+    {
+      "key": "B2/financebench_id_03069",
+      "year": true,
+      "line_item": false,
+      "unit": false,
+      "reason": "For AMD, both the USD 167 million in depreciation and amortization on PDF page 60 and the 27% gross margin on page 43 are for FY2015. The model uses gross margin as the denominator. The required denominator is net revenue of USD 3,991 million on page 56. The answer reports 61.33 percentage points for a question asking for percent.",
+      "focus": ""
+    },
+    {
+      "key": "B2/financebench_id_03282",
+      "year": false,
+      "line_item": false,
+      "unit": false,
+      "reason": "Netflix reports amounts in USD thousands on PDF page 45. The calculation mixes current content liabilities of 4,173,041 in FY2017 and 3,632,711 in FY2016 and adds other figures more than once. Page 45 already reports FY2017 total current liabilities of USD 5,466,312 thousand. The answer labels its computed 21,722,504 in millions, while the explanation calls it dollars.",
+      "focus": ""
+    },
+    {
+      "key": "B2/financebench_id_03620",
+      "year": true,
+      "line_item": false,
+      "unit": true,
+      "reason": "The PepsiCo answer supplies no citations. Its explanation uses 8,978, 2,763 and 5,207, all visible in the FY2022 column on PDF page 64 in USD millions. The 8,978 is net income. Operating profit is 11,512 on page 62. The depreciation and capital expenditure figures, the addition and subtraction, and the scale of the submitted 6,534 million can all be verified.",
+      "focus": ""
+    },
+    {
+      "key": "B2/financebench_id_03838",
+      "year": true,
+      "line_item": false,
+      "unit": true,
+      "reason": "The Block answer supplies no citations. The tool retrieved a 67,204 increase from 2019 to 2020 for the Seller segment and 2019 segment revenue of 3,461,988 on PDF page 66, both in USD thousands. It calculated segment growth of 1.9412%, then subtracted it from company-wide growth of 101% on page 62 to obtain 99.0588%. The years and percentage conversion are traceable. The error is using segment figures in a company-wide growth formula.",
+      "focus": ""
+    },
+    {
+      "key": "B2/financebench_id_04209",
+      "year": null,
+      "line_item": false,
+      "unit": true,
+      "reason": "Costco reports FY2021 and FY2020 in USD millions on PDF page 38. The cited current assets of 29,505 and 28,120 and property, plant and equipment of 23,492 and 21,807 each copy both years. Both rows are on page 38, although the second citation points to page 41. Adding the two rows omits other noncurrent assets. The total-assets row for the target year gives 59,268. The scale is identifiable, but the citations do not identify the selected year.",
+      "focus": "Can the selected column be established? Both years were copied, and the submitted result does not match the sum of the two current-year figures."
+    },
+    {
+      "key": "B2/financebench_id_04302",
+      "year": false,
+      "line_item": false,
+      "unit": false,
+      "reason": "Nike's PDF page 24 reports direct sales of 10,428 and 9,082 and NIKE Brand revenue of 34,485 and 32,233 for FY2018 and FY2017. The question covers consolidated results from FY2016 through FY2018. The answer omits one year and labels direct sales as cost of sales. Page 46 gives consolidated cost of sales and revenue for all three years. The answer reports 0.24 percentage points for a question asking for percent.",
+      "focus": ""
+    },
+    {
+      "key": "B2/financebench_id_04417",
+      "year": false,
+      "line_item": false,
+      "unit": null,
+      "reason": "The Best Buy question asks for ending inventory in FY2019. The model says it added 26 from FY2017 to 26 from FY2018. The cited pages give store counts (PDF page 32) and restructuring charges and accruals (page 82). Neither supports the two inventory amounts. Page 52 reports FY2019 merchandise inventories of USD 5,409 million. The monetary scale of the submitted 52 cannot be established from the two cited figures.",
+      "focus": "What does each 26 measure? The store table on page 32 cannot establish a dollar amount."
+    },
+    {
+      "key": "B2/financebench_id_04458",
+      "year": true,
+      "line_item": false,
+      "unit": null,
+      "reason": "The Netflix answer supplies no citations. The calculation uses 305,826, 4,591,476, 650,788, 407,329 and 824,092 from the FY2015 column on PDF page 40, in USD thousands. It adds costs and operating expenses to operating income and counts technology and development expenses twice. The required depreciation and amortization figure is 62,283 on page 42. The addition can be replayed, but the tool record does not establish the denominator or conversion behind the submitted 110.99%.",
+      "focus": "Which numerator and denominator produce 110.99%? The unit label alone cannot establish the calculation."
+    },
+    {
+      "key": "B2/financebench_id_04481",
+      "year": null,
+      "line_item": false,
+      "unit": null,
+      "reason": "PepsiCo's PDF page 103 reports FY2022 net income attributable to shareholders of 8,910. Page 104 covers accumulated other comprehensive loss, and the cited 237 cannot be located there. The relevant figures on pages 62 and 64 are operating profit of 11,512, depreciation and amortization of 2,763 and revenue of 86,392. Dividing 13,186 by 8,910 reproduces the tool's decimal result of 1.47991. The record does not establish the year or source scale of 237.",
+      "focus": "Check the year, sign and unit for 237. Page 103 contains (237), a negative amount for a different line item."
+    },
+    {
+      "key": "B2/financebench_id_04980",
+      "year": false,
+      "line_item": false,
+      "unit": null,
+      "reason": "PepsiCo's PDF page 65 reports property, plant and equipment and amortizable intangible asset balances of 22,407 and 1,538 for FY2021 and 21,369 and 1,703 for FY2020. The second citation points to page 66. The question asks for FY2021 capital spending of USD 4,625 million, or USD 4.625 billion, on page 63. The answer reports USD 20.21 million. Its stated addition of asset balances does not explain the conversion to 20.21.",
+      "focus": "Can the scale of 20.21 be reproduced? Assess the output unit separately from the choice of line items."
+    },
+    {
+      "key": "B2/financebench_id_06741",
+      "year": true,
+      "line_item": false,
+      "unit": true,
+      "reason": "PDF page 38 gives Walmart International's operating income as a percentage of sales: 2.8% in FY2020, 4.0% in FY2019 and 4.4% in FY2018. Page 30 gives a consolidated gross margin of 24.1% in FY2020. The years and percentage scale are identifiable. Neither measure gives the requested consolidated EBITDA margin, and the reported mean is also incorrect.",
+      "focus": ""
+    },
+    {
+      "key": "B2/financebench_id_07661",
+      "year": false,
+      "line_item": false,
+      "unit": false,
+      "reason": "Block's PDF page 90 reports FY2020 operating cash flow of USD 381,603 thousand. The model labels it as net income, which is 213,105 on that page. The second citation on page 74 gives USD 465.7 million for FY2019. The explanation gives USD 381,603,000, but the submitted 381,603 in USD millions is 1,000 times the filing amount.",
+      "focus": ""
+    },
+    {
+      "key": "B2/financebench_id_09724",
+      "year": false,
+      "line_item": false,
+      "unit": true,
+      "reason": "Coca-Cola's PDF page 62 reports FY2021 cost of goods sold of 15,357 and revenue of 38,655 in USD millions. The percentage calculation gives 39.728%. The model then adds 100 to obtain 139.728%. The cited USD 103 million on page 108 is a FY2020 change in the deferred tax valuation allowance, a different year and line item.",
+      "focus": ""
+    },
+    {
+      "key": "B2/financebench_id_10285",
+      "year": true,
+      "line_item": false,
+      "unit": true,
+      "reason": "Boeing's PDF page 52 gives FY2018 net property, plant and equipment of 12,645 and goodwill of 7,840, both in USD millions. The year and scale in the answer agree with the table. The requested amount is the net property, plant and equipment balance. The answer subtracts goodwill and submits 4,850, which also differs from the arithmetic difference of 4,805.",
+      "focus": ""
+    },
+    {
+      "key": "NoVerifier/financebench_id_03282",
+      "year": true,
+      "line_item": false,
+      "unit": false,
+      "reason": "On Netflix's PDF page 45, current liabilities of 5,466,312 and noncurrent content liabilities of 3,329,796 are both in the FY2017 column. The model adds noncurrent content liabilities to current liabilities and treats the table's USD thousands as dollars, reporting USD 8.796108 million. The second citation points to page 54, which gives only an approximate USD 3.3 billion. Page 45 gives the exact figure.",
+      "focus": ""
+    },
+    {
+      "key": "NoVerifier/financebench_id_03718",
+      "year": true,
+      "line_item": false,
+      "unit": false,
+      "reason": "Lockheed Martin's PDF page 64 reports 8,715 and 6,266 in the FY2022 and FY2020 columns. These are comprehensive income. Total net sales of 65,984 and 65,398 appear on page 63. The model labels the page 64 figures in percent, although they are in USD millions, and calculates ordinary growth for a question asking for two-year compound annual growth.",
+      "focus": ""
+    },
+    {
+      "key": "NoVerifier/financebench_id_04209",
+      "year": true,
+      "line_item": false,
+      "unit": false,
+      "reason": "On Costco's PDF page 38, both 29,505 and 59,268 are in the FY2021 column. The first is current assets. The second is already total assets. The model labels the second figure as other assets and adds them together. The table reports USD millions. The plan declares dollars and divides by one million a second time.",
+      "focus": ""
+    },
+    {
+      "key": "NoVerifier/financebench_id_04254",
+      "year": true,
+      "line_item": false,
+      "unit": false,
+      "reason": "The figures 1,263 and 636 on PDF pages 86 and 88 are both from FY2021. The 636 is depreciation and amortization. The 1,263 is net income attributable to common shareholders. Page 86 gives operating income of 1,196. Both tables report USD millions. The model adds the figures as dollars and then divides by one million.",
+      "focus": ""
+    },
+    {
+      "key": "NoVerifier/financebench_id_04302",
+      "year": null,
+      "line_item": false,
+      "unit": false,
+      "reason": "The two passages retrieved from Nike's PDF page 25 discuss changes in brand sales. Neither contains the raw number 100 that the model cites twice, leaving the years uncertain. The plan labels both entries as NIKE Brand cost of sales in percent. The requested calculation uses consolidated cost of sales and revenue for each of three years on page 46. The inputs are in USD millions, and the resulting ratios are percentages.",
+      "focus": "Neither occurrence of 100 can be located in the visible text, so neither year can be verified."
+    },
+    {
+      "key": "NoVerifier/financebench_id_04417",
+      "year": null,
+      "line_item": false,
+      "unit": false,
+      "reason": "PDF page 82 covers restructuring costs. The model's stated inventory of 1,000 cannot be located there, leaving the year uncertain. Another visible page (26) reports FY2018 net income of 1,000. The model treats the year 2019 as a dollar amount and adds it to inventory. Page 52 reports FY2019 inventory of USD 5,409 million.",
+      "focus": "Can the claimed 1,000 be traced to its source? An equal number on a different page does not establish its origin."
+    },
+    {
+      "key": "NoVerifier/financebench_id_04700",
+      "year": true,
+      "line_item": false,
+      "unit": false,
+      "reason": "Microsoft's PDF page 94 gives 12,461 and (1,110) in the FY2016 column. The first is operating income of the Productivity and Business Processes segment. The second covers impairment, integration and restructuring expenses. Page 52 gives total cost of revenue of 32,780. Page 94 reports USD millions, but the model treats the figures as dollars and reports USD 0.011351 million.",
+      "focus": ""
+    },
+    {
+      "key": "NoVerifier/financebench_id_04980",
+      "year": true,
+      "line_item": true,
+      "unit": false,
+      "reason": "PepsiCo's PDF page 63 reports FY2021 capital spending of (4,625) in USD millions. The year and the one financial line item match. The second operand, 1, is a multiplier introduced by the model and has no associated fiscal year or line item. The plan declares dollars as the input unit, retains the cash-outflow sign and reports USD −0.000004625 billion. The expenditure magnitude is USD 4.625 billion.",
+      "focus": ""
+    },
+    {
+      "key": "NoVerifier/financebench_id_06741",
+      "year": false,
+      "line_item": false,
+      "unit": false,
+      "reason": "Walmart's PDF page 38 reports 3,370 and 5,229 for FY2020 and FY2018 for the international segment. These cover only the first and last years, omitting FY2019. The model treats segment operating income in USD millions as percentages in its calculation. The consolidated EBITDA margins require three years of operating income, depreciation and amortization, and revenue on pages 51 and 56.",
+      "focus": ""
+    },
+    {
+      "key": "NoVerifier/financebench_id_07661",
+      "year": true,
+      "line_item": false,
+      "unit": false,
+      "reason": "Block's FY2020 column on PDF page 90 reports net income of 213,105 and depreciation and amortization of 84,212. The model labels the second value as a generic adjustment and adds only these two figures. It omits changes in working capital and other cash flow adjustments. The same page already reports net cash provided by operating activities of 381,603. The table uses USD thousands, while the model declares dollars.",
+      "focus": ""
+    },
+    {
+      "key": "NoVerifier/financebench_id_07966",
+      "year": null,
+      "line_item": null,
+      "unit": null,
+      "reason": "For Activision Blizzard, the model gives −1.0 twice without a line item. It cites PDF page 70 and a FY2018 filing it did not receive. The visible passage on page 70 contains no −1.0, so neither entry's year, line item or percentage unit can be established. The percentage change between two values cannot give the requested three-year average of capital expenditure to revenue. Pages 70 and 73 contain the underlying figures.",
+      "focus": "The original rows, years and scales for both occurrences of −1.0 are untraceable. All three judgments remain unresolved."
+    },
+    {
+      "key": "NoVerifier/financebench_id_10285",
+      "year": true,
+      "line_item": true,
+      "unit": false,
+      "reason": "Boeing's PDF page 52 reports FY2018 net property, plant and equipment of 12,645 in USD millions, the requested line item. The model introduces 100 as a multiplier without identifying a financial line item. It labels its inputs in dollars and submits USD 1.2645 million. The source already reports USD 12,645 million.",
+      "focus": ""
+    }
+  ]
+}

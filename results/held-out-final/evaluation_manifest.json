@@ -1,0 +1,13 @@
+{
+  "numeric_gold": "published FinanceBench answer",
+  "source_sha256": {
+    "evaluate.py": "a07e18015dc594a6837d71d98e38c623ed848231670455b4c2f517607be15422",
+    "filing_numbers.py": "7193f4492f944e4b20a165f852cd99dc3243dd2abb193138cc00aefbd5eef3f6",
+    "comparison_report.py": "61d4abeba2b1258cc514a3a12eb853c2f18c2695549df6040ff73b9400fe54dd",
+    "analyze_errors.py": "c1a42020819f88d4c9caf836f8631ecaf76db7860e559ddeb6cdc642baec309e",
+    "plot_results.py": "c94369209740fc0bb58dd75da5ca293e83e8e678f28c8661500db5fa75b4d668",
+    "data/evaluation/gold.jsonl": "4135c81f3753c4dc1eb6f99e1ce4d3cf88127a2eff0590a8dfecfd96657e5f94",
+    "data/evaluation/held_out_operands.json": "4fa64669f52890a6c01ecd27e4fbe48404e07f884f088465dcdb8aff04d71dac",
+    "data/splits.json": "bf9cb9ac0c0b0c8982f08d6cb49fbcda158526b076f73ba3c21c7c8905bb4d97"
+  }
+}

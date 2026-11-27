@@ -1,0 +1,22 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vscode/
+.idea/
+models/
+tools/
+submission/
+data/filings/
+data/hybrid_index/
+*.lock
+
+# Track the three evidence sets used in the report and the two README examples.
+results/*
+!results/held-out-final/
+!results/hybrid-dev/
+!results/phase1-final/
+!results/hybrid-dev-retrieval.json

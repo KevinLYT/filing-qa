@@ -1,0 +1,435 @@
+{
+  "protocol_version": "paired-filing-qa-v4",
+  "baseline_protocol": "explanation-first-v2",
+  "b2_protocol": "single-agent-mcp-v2",
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf",
+  "endpoint": "http://127.0.0.1:18091/v1",
+  "pricing": {
+    "source": "Self-hosted llama.cpp on 127.0.0.1; no provider token charge.",
+    "input": "0",
+    "output": "0",
+    "cached_input": "0",
+    "per_tokens": 1000000,
+    "currency": "USD"
+  },
+  "retrieval": {
+    "method": "hybrid",
+    "agent_chunks_per_search": 2,
+    "hybrid": {
+      "method": "bm25-minilm-rrf-crossencoder-v1",
+      "window_tokens": 192,
+      "overlap_tokens": 32,
+      "dense_max_tokens": 256,
+      "cross_encoder_max_tokens": 512,
+      "rrf_k": 60,
+      "rerank_candidates": 8,
+      "window_aggregation": "max",
+      "backend": "CPUExecutionProvider",
+      "threads": 4,
+      "batch_size": 12,
+      "assets": {
+        "dense": {
+          "model.onnx": "b941bf19f1f1283680f449fa6a7336bb5600bdcd5f84d10ddc5cd72218a0fd21",
+          "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037"
+        },
+        "reranker": {
+          "model.onnx": "c80a8b34256ea453093d612e3ac48d3d965a0c0a48c7906709af8b8e28461bf9",
+          "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"
+        }
+      },
+      "packages": {
+        "numpy": "2.2.6",
+        "onnxruntime": "1.23.2",
+        "tokenizers": "0.22.1"
+      }
+    }
+  },
+  "baseline_retrieval": {
+    "B0": "none",
+    "B1": "BM25 top 4"
+  },
+  "budget": {
+    "max_tool_calls": 6,
+    "max_model_calls": 7,
+    "baseline_model_calls": 1,
+    "temperature": 0,
+    "max_output_tokens_per_call": 800,
+    "max_verification_retries": 1
+  },
+  "python": "3.11.9",
+  "packages": {
+    "langgraph": "1.0.10",
+    "langchain-core": "1.8.4",
+    "langsmith": "0.16.2",
+    "mcp": "1.26.0",
+    "pypdf": "5.9.0",
+    "numpy": "2.2.6",
+    "onnxruntime": "1.23.2",
+    "tokenizers": "0.22.1"
+  },
+  "source_sha256": {
+    "run_baselines.py": "94bc059878a2164602f86f3d3794185fad63566db9cc0263702ecc5aec0d774f",
+    "run_agent.py": "cd4a02289898b511abd0288ed1ce24c44fbd08ee2ea79f3f6dda9c4219b712d5",
+    "run_comparison.py": "91e1d933f9307d6a64c918425103210bcd7373201c13767bfb0ba43d8e924630",
+    "multi_graph.py": "36a47a3b8f02b246ad175cfd59053dacbb7c1ee2b7d08667d428985749b67dd6",
+    "multi_roles.py": "94618c17acd4e5eb21a592d08c6d2cbe75520a3b32776be5bfc75512e19bf3d5",
+    "retrieve_b1.py": "7338d20d4578b88e7cc62a106fc2c46adca1740bbdb8a8c196a37d2110b1815d",
+    "filing_mcp.py": "d2f8d650aae998f7a64d12f973d6b585bf882da62e874a0aa8c3b404584253c4",
+    "filing_tools.py": "c7e1dd58330d8a3b26986d92e4b5f82da024fbb6cef7fe3e295d2ad5c7befe77",
+    "filing_numbers.py": "7193f4492f944e4b20a165f852cd99dc3243dd2abb193138cc00aefbd5eef3f6",
+    "start_qwen.ps1": "da6d1fb3f8962f75b23744721ae13d4b27f39ae5b6dd0af1b9115e09d0b34229",
+    "hybrid_search.py": "6d5b24200c055121c58d92f8c197c177013bdc2e89c2e825648e60c0434e8e5a",
+    "setup_retrieval.py": "89ec52df03a4f67ab3342f0aeeb3fc7e95cd48df52c79399b9867014c6b660ef"
+  },
+  "local_gguf_sha256": "626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+  "local_llama_server_sha256": "53adb95530de2630377966e042a10d19c26d3a4491e22529585dd4c613e325e0",
+  "mode": "live",
+  "protocol_sha256": "6b1976c831d5efdfe6fb372ef1f472ecf710545cd77e331bceb0c0e310e6cdde",
+  "scope": "held-out",
+  "systems": [
+    "B0",
+    "B1",
+    "B2",
+    "Ours",
+    "NoVerifier"
+  ],
+  "order": {
+    "financebench_id_02608": [
+      "B0",
+      "B1",
+      "B2",
+      "Ours",
+      "NoVerifier"
+    ],
+    "financebench_id_02981": [
+      "B1",
+      "B2",
+      "Ours",
+      "NoVerifier",
+      "B0"
+    ],
+    "financebench_id_03069": [
+      "B2",
+      "Ours",
+      "NoVerifier",
+      "B0",
+      "B1"
+    ],
+    "financebench_id_03282": [
+      "Ours",
+      "NoVerifier",
+      "B0",
+      "B1",
+      "B2"
+    ],
+    "financebench_id_03620": [
+      "NoVerifier",
+      "B0",
+      "B1",
+      "B2",
+      "Ours"
+    ],
+    "financebench_id_03718": [
+      "B0",
+      "B1",
+      "B2",
+      "Ours",
+      "NoVerifier"
+    ],
+    "financebench_id_03838": [
+      "B1",
+      "B2",
+      "Ours",
+      "NoVerifier",
+      "B0"
+    ],
+    "financebench_id_03849": [
+      "B2",
+      "Ours",
+      "NoVerifier",
+      "B0",
+      "B1"
+    ],
+    "financebench_id_03882": [
+      "Ours",
+      "NoVerifier",
+      "B0",
+      "B1",
+      "B2"
+    ],
+    "financebench_id_04171": [
+      "NoVerifier",
+      "B0",
+      "B1",
+      "B2",
+      "Ours"
+    ],
+    "financebench_id_04209": [
+      "B0",
+      "B1",
+      "B2",
+      "Ours",
+      "NoVerifier"
+    ],
+    "financebench_id_04254": [
+      "B1",
+      "B2",
+      "Ours",
+      "NoVerifier",
+      "B0"
+    ],
+    "financebench_id_04302": [
+      "B2",
+      "Ours",
+      "NoVerifier",
+      "B0",
+      "B1"
+    ],
+    "financebench_id_04417": [
+      "Ours",
+      "NoVerifier",
+      "B0",
+      "B1",
+      "B2"
+    ],
+    "financebench_id_04458": [
+      "NoVerifier",
+      "B0",
+      "B1",
+      "B2",
+      "Ours"
+    ],
+    "financebench_id_04481": [
+      "B0",
+      "B1",
+      "B2",
+      "Ours",
+      "NoVerifier"
+    ],
+    "financebench_id_04700": [
+      "B1",
+      "B2",
+      "Ours",
+      "NoVerifier",
+      "B0"
+    ],
+    "financebench_id_04784": [
+      "B2",
+      "Ours",
+      "NoVerifier",
+      "B0",
+      "B1"
+    ],
+    "financebench_id_04980": [
+      "Ours",
+      "NoVerifier",
+      "B0",
+      "B1",
+      "B2"
+    ],
+    "financebench_id_05718": [
+      "NoVerifier",
+      "B0",
+      "B1",
+      "B2",
+      "Ours"
+    ],
+    "financebench_id_06741": [
+      "B0",
+      "B1",
+      "B2",
+      "Ours",
+      "NoVerifier"
+    ],
+    "financebench_id_07661": [
+      "B1",
+      "B2",
+      "Ours",
+      "NoVerifier",
+      "B0"
+    ],
+    "financebench_id_07966": [
+      "B2",
+      "Ours",
+      "NoVerifier",
+      "B0",
+      "B1"
+    ],
+    "financebench_id_08135": [
+      "Ours",
+      "NoVerifier",
+      "B0",
+      "B1",
+      "B2"
+    ],
+    "financebench_id_09724": [
+      "NoVerifier",
+      "B0",
+      "B1",
+      "B2",
+      "Ours"
+    ],
+    "financebench_id_10285": [
+      "B0",
+      "B1",
+      "B2",
+      "Ours",
+      "NoVerifier"
+    ]
+  },
+  "question_ids": [
+    "financebench_id_02608",
+    "financebench_id_02981",
+    "financebench_id_03069",
+    "financebench_id_03282",
+    "financebench_id_03620",
+    "financebench_id_03718",
+    "financebench_id_03838",
+    "financebench_id_03849",
+    "financebench_id_03882",
+    "financebench_id_04171",
+    "financebench_id_04209",
+    "financebench_id_04254",
+    "financebench_id_04302",
+    "financebench_id_04417",
+    "financebench_id_04458",
+    "financebench_id_04481",
+    "financebench_id_04700",
+    "financebench_id_04784",
+    "financebench_id_04980",
+    "financebench_id_05718",
+    "financebench_id_06741",
+    "financebench_id_07661",
+    "financebench_id_07966",
+    "financebench_id_08135",
+    "financebench_id_09724",
+    "financebench_id_10285"
+  ],
+  "input_sha256": "9bac790814e414a21304e4e1efe970f03c608f0af29bb07a741111065a063556",
+  "filing_index_sha256": {
+    "ACTIVISIONBLIZZARD_2019_10K": "61460f0163ce0f593508813ff586e94d621f47176cf4113d4e28aaaced0ea848",
+    "AMAZON_2017_10K": "173d5271dae983d1198147d7f923e29d418d770fd08ce515f6f55e691db8ce28",
+    "AMCOR_2020_10K": "ae2a763ad09f5c20759dbd1166191d87479925f0b0df9a5df73304709373d58c",
+    "AMD_2015_10K": "3ff5f608769c6ba4665b0b887c50b138637b9da938399f1e56e0675b9be0c416",
+    "AMERICANWATERWORKS_2020_10K": "9e831b662fd038e2213558e8ec239bd5f52d2199de74ce287ef2aa8cf5f62f22",
+    "AMERICANWATERWORKS_2021_10K": "8e7004a9ed952fd494e4a404b3f4fea4e88091e0baec567d00dc1d2da20fec2f",
+    "BESTBUY_2017_10K": "07fdaa77b07702b93517218ea1ac4ae22a5ca991670ff5d8d8f79e3fdee98d94",
+    "BESTBUY_2019_10K": "a70ee71242cc550c926df71b276e4481e261f1bb905433ed3552db35935224fc",
+    "BLOCK_2020_10K": "d06681f368f00627fcc82e92fee979a23bcae0fe353ac4b6ce965d0b6ec917f4",
+    "BOEING_2018_10K": "841768be9b27e250008a0663ad063537109ac56d7e0b58d6955fa24814e76677",
+    "COCACOLA_2021_10K": "905785430c41d20f96815b7af73335f6632cdb66223efca4def167f30f128b13",
+    "CORNING_2021_10K": "0a9e26c557fa59cfae1426b2e3e2ed5ffd93279f0dddbc1ef2fe9ce5b7113bca",
+    "COSTCO_2021_10K": "56ac1b6a40dba6cdc4669125ea6cff2d7ae17f65d604af558b1071c5b26f0735",
+    "LOCKHEEDMARTIN_2022_10K": "0555ba725de9b25e0536fbcac0e414b1b42d2746d74464adb4f8bd4950803c09",
+    "MGMRESORTS_2018_10K": "83ff1b0ce0ddd3937ed96ddbf9fef5e875025a5a69202c78ef4c62f7f64daa68",
+    "MGMRESORTS_2020_10K": "c564080d1d43274fcfee6f2e96a7ccbdbf1e722b66d138483b4a12c4fb6ab1c3",
+    "MICROSOFT_2016_10K": "c06fde5211b82c9b065c8a33442970b617e322da87c2f3fabb441775de15490a",
+    "NETFLIX_2015_10K": "890996d7a5574576534d092d0f7e3a73fb53ab0aa78a7d548e7b626a4774e7f0",
+    "NETFLIX_2017_10K": "2bb1639daa68e01358b4228e6ea1193d274ed04b7bfad23884f67a1bcefdc25d",
+    "NIKE_2018_10K": "1566d290c38f6f1e37f4b6bf79e05b198707d6b4eacdacd105ba65e0df872653",
+    "PEPSICO_2021_10K": "e5759cc7199947be9ab2cac96af281a20bdda067f23320d6ad395eba713b05de",
+    "PEPSICO_2022_10K": "209d40873b3c7e4687999bbd4997cd0cee80f33683382d6c953b982d7383c1d2",
+    "WALMART_2019_10K": "389bfaa1b1321d6f6fb0e397dacea2e0e77e909ecd5ee16e576d4cfedfac6c47",
+    "WALMART_2020_10K": "4ba752bf995f015c7c8c643938fe224f9a3f36a606a9bcf1675349fbc721b940"
+  },
+  "hybrid_index_signatures": {
+    "ACTIVISIONBLIZZARD_2019_10K": {
+      "embedding_fingerprint": "5356b15c66b2e7b2bde84c7e69c353257ccf03daf0ad31abbedf445d91203c43",
+      "npz_sha256": "8bd488e5827f1e4d462ed415e574f6535ab7571bd72e606cf349b6002c9a2313"
+    },
+    "AMAZON_2017_10K": {
+      "embedding_fingerprint": "43efed81c7423da81acbd2d1046857c4953eef582cee96af7459f025e313d1c0",
+      "npz_sha256": "693ceaa6ab4fa1fdfd520dbc9f5c72fb0d5537649425bea2a069c5077960782d"
+    },
+    "AMCOR_2020_10K": {
+      "embedding_fingerprint": "1c2fed438845aa25ec18aac3cb4d8624c0832958d9b1f524ca97b75025a38cf7",
+      "npz_sha256": "acde131c04993a8dd3dfb6582d65c346188e6e208b89d9d33b2d99a7a8d1f880"
+    },
+    "AMD_2015_10K": {
+      "embedding_fingerprint": "24fb168ec8c07b5701b6383763797a27b3c05fe9eb1eac33a978d6dc6b1a62d7",
+      "npz_sha256": "010f869dd63b4ba0694cd8f487466f853f5c288a6737fb472036479573f6293c"
+    },
+    "AMERICANWATERWORKS_2020_10K": {
+      "embedding_fingerprint": "337d27ea40014739162fc333b90b2784c0179eed2465b8c0750b8210461c21f0",
+      "npz_sha256": "b0e6859511d82076bb6dab910bc63f2183338e4618d9da6143de9499e1126439"
+    },
+    "AMERICANWATERWORKS_2021_10K": {
+      "embedding_fingerprint": "22e830a06a6e2845320158e1689417646e43c17ddd8343cf54d084df176c70d9",
+      "npz_sha256": "e199292f924575c9b0199ccf5289a2a221ca294b744fd1b40646cbe28f87805b"
+    },
+    "BESTBUY_2017_10K": {
+      "embedding_fingerprint": "05b413dad694cd2fdc709fc0dd41636d22d6af6625448cca5ad403ec935bdf76",
+      "npz_sha256": "640de6eca681bcd7615ce265ee20b549af5e65d40105bf8ba910328825bbb368"
+    },
+    "BESTBUY_2019_10K": {
+      "embedding_fingerprint": "4b24d9172620b5d0057c4537ceaad7faf49406e848e5539dd65b6c8bead26275",
+      "npz_sha256": "5c4c6b763ed769aa47ef105fc214d14b9c9a135d88d0e8a1a1d8f67e54b8fa1c"
+    },
+    "BLOCK_2020_10K": {
+      "embedding_fingerprint": "d73884b4aae32144c13e34b700e4c7b45ec74de20b72db2da6f5a81381558cee",
+      "npz_sha256": "a97e20f1a905168ce3f6ea652a032d520c714386542ecea1c464157e0106b1c8"
+    },
+    "BOEING_2018_10K": {
+      "embedding_fingerprint": "10d84602dd9833dd92b8bd9427f4524b9e6af53dfb7930258790a55bab06275e",
+      "npz_sha256": "3a96ade9ef72eb326663d4067713a493c84991cf097856226b5bc7f9a9f5042a"
+    },
+    "COCACOLA_2021_10K": {
+      "embedding_fingerprint": "6a9f0a78f111de71ec905035ecbbbaad373ac830c5ce55b25f6e2abd2f873566",
+      "npz_sha256": "663f31b988bc7fec888c4998a109d698d74389a06a044f27254876560c1576a9"
+    },
+    "CORNING_2021_10K": {
+      "embedding_fingerprint": "9449d433491b776d8ac3ed8f46d65fc07cf3517e80a9e4839103f5467d4d4edd",
+      "npz_sha256": "ba39602af17e63c2648eabbae0f82628496a2b2ccb0e74e7aa164a18f0dfd6b2"
+    },
+    "COSTCO_2021_10K": {
+      "embedding_fingerprint": "72c70fe8c0d4bdbe8bccf3e702e0e9b865d58dd84a38993f840468bd79c909bb",
+      "npz_sha256": "4743ac7431e651a1288f7e46795941d99a59daf2e07c6a06b9e24812acbf9a17"
+    },
+    "LOCKHEEDMARTIN_2022_10K": {
+      "embedding_fingerprint": "a9c1ad0bb416851fdd42325ec7ada7d76dc6279b0eeded7f0378ae989f3da36f",
+      "npz_sha256": "b367315c15b7307b61ac0f0dc3c5d0756d2a66317b90c870fc85b8525cad77e5"
+    },
+    "MGMRESORTS_2018_10K": {
+      "embedding_fingerprint": "fa22840dab81fd1c7ac5c378e26519d156f73cb0182f80284cb5b6b8e67449fb",
+      "npz_sha256": "72f4b07be6e11e15f5bf645c9a611518ff297b9abec814b764e64c8b4c5264c5"
+    },
+    "MGMRESORTS_2020_10K": {
+      "embedding_fingerprint": "593261154d84ef382329af542a33db51c26ef25c2dd831ba17479cacaa2702e8",
+      "npz_sha256": "e40f8bbf3dbdc1d7bd365bbd1cc25a7e4ae639664a046019ca0685c09753638c"
+    },
+    "MICROSOFT_2016_10K": {
+      "embedding_fingerprint": "bc4fbb7c287c176ad41a733787050ba6acc20f29bbcb40e90bba18fb81c1fb8e",
+      "npz_sha256": "e4a74a6d33f6ce85c55dec40f6553b369dd28f5ca5e00ad8d1c292e1a27901c0"
+    },
+    "NETFLIX_2015_10K": {
+      "embedding_fingerprint": "c7525c205bbea7af50a7ab0988fbf5aa10309ce437cff5e7836030f015ffc305",
+      "npz_sha256": "ec2500580822bc0068c46df6abd76df2eb35ceafee7689872ff7cf73d9cfff63"
+    },
+    "NETFLIX_2017_10K": {
+      "embedding_fingerprint": "bd8ce7e70ea20be75be00ad8c2184bbf2f924e17797ae0b733834f1863f1a3ce",
+      "npz_sha256": "1220cdc6da69756b7aa913cf26055b12f5316ca37437d32debc4e5758f4c5249"
+    },
+    "NIKE_2018_10K": {
+      "embedding_fingerprint": "c89168980575c62f26ab3746407a8cbb6c8a1e1771ac1816513daa3087c26a9b",
+      "npz_sha256": "f274d064eaac804b3ad4104036300ea7199829285550453cc6e04c6454502ec6"
+    },
+    "PEPSICO_2021_10K": {
+      "embedding_fingerprint": "b3599d91f7d79ee6614a2bbd063c4a79405f15a014d34afa5a228b4da140132a",
+      "npz_sha256": "c185d202055b98e5d732f91f39804cc54ad96b15d434b1d56824fe8bbea8de5b"
+    },
+    "PEPSICO_2022_10K": {
+      "embedding_fingerprint": "8019e85bdf4c7123c09af0f0a47c1359b1c6c7ea4b106859e68254a8fc63e675",
+      "npz_sha256": "7b18183a073c4b6f6169bb19c3aa8c662f97414cf230f79232dde3ff380e186e"
+    },
+    "WALMART_2019_10K": {
+      "embedding_fingerprint": "e709d0e2f66bbcef460cdd40adc30512c75bf27b339f7ede4d692446a9125945",
+      "npz_sha256": "8aedb0ead6b79ba4284d097a78b66aaf60fb3072e8e4208854171cf2b8971dd4"
+    },
+    "WALMART_2020_10K": {
+      "embedding_fingerprint": "8f4627f2dbb23bf6b45aa9792d7a07d09352baee90b6a3089b93ac045cdc449f",
+      "npz_sha256": "3e6418480940bdab509c4681cefe2ca71507b222f91c2ab7b17320b48b78243c"
+    }
+  },
+  "run_sha256": "3f38f2a888b4d273889dac79a60628bb36937d26963879298d2b57f9dc609ec5",
+  "started_utc": "2026-11-25T06:31:34.113803+00:00"
+}

@@ -1,0 +1,184 @@
+{
+  "protocol_version": "explanation-first-v2",
+  "mode": "live",
+  "scope": "dev",
+  "started_utc": "2026-11-23T05:55:01.356087+00:00",
+  "question_ids": [
+    "financebench_id_03031",
+    "financebench_id_03029",
+    "financebench_id_04672",
+    "financebench_id_07507",
+    "financebench_id_04854",
+    "financebench_id_08286",
+    "financebench_id_03531"
+  ],
+  "systems": [
+    "B0",
+    "B1"
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf",
+  "endpoint": "http://127.0.0.1:18091/v1",
+  "pricing": {
+    "source": "Self-hosted llama.cpp on 127.0.0.1; no provider token charge.",
+    "input": "0",
+    "output": "0",
+    "cached_input": "0",
+    "per_tokens": 1000000,
+    "currency": "USD"
+  },
+  "request_settings": {
+    "model": "qwen2.5-3b-instruct-q4_k_m.gguf",
+    "temperature": 0,
+    "max_tokens": 800,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "filing_answer",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "answer": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "answered"
+                      ]
+                    },
+                    "citations": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "doc_name": {
+                            "type": "string"
+                          },
+                          "pdf_page": {
+                            "type": "integer"
+                          },
+                          "chunk_id": {
+                            "type": "string"
+                          },
+                          "label": {
+                            "type": "string"
+                          },
+                          "raw_number": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "doc_name",
+                          "pdf_page",
+                          "chunk_id",
+                          "label",
+                          "raw_number"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string",
+                      "enum": [
+                        "USD",
+                        "USD_thousands",
+                        "USD_millions",
+                        "USD_billions",
+                        "percent",
+                        "fraction",
+                        "percentage_points"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "explanation",
+                    "status",
+                    "citations",
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "refusal"
+                      ]
+                    },
+                    "citations": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "doc_name": {
+                            "type": "string"
+                          },
+                          "pdf_page": {
+                            "type": "integer"
+                          },
+                          "chunk_id": {
+                            "type": "string"
+                          },
+                          "label": {
+                            "type": "string"
+                          },
+                          "raw_number": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "doc_name",
+                          "pdf_page",
+                          "chunk_id",
+                          "label",
+                          "raw_number"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "maxItems": 0
+                    },
+                    "value": {
+                      "type": "null"
+                    },
+                    "unit": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "explanation",
+                    "status",
+                    "citations",
+                    "value",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            }
+          },
+          "required": [
+            "answer"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  }
+}

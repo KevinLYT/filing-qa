@@ -1,0 +1,385 @@
+{
+  "revision": "cc39aeb4afdf33909ee1412188bf89035950c2eb",
+  "source": "FinanceBench open-source JSONL evidence and justification, with the corresponding complete 10-Ks under data/filings. Annotation and recomputation performed independently of system predictions. These are project-generated evaluation labels.",
+  "convention": "PDF pages are one-based. Each row pairs years and printed figures by position. A proof path needs every figure in every row; distinct paths are alternatives. Outflow magnitude additionally permits a positive number only when that positive figure is itself present in the cited visible excerpt. Citation matching never requires the gold page. Year, row, unit and formula remain subject to team review. Recomputed values use the annotated financial statements and are shown in the result unit, to at most eight fractional digits. Numeric grades use the published answer.",
+  "questions": {
+    "financebench_id_02608": {
+      "doc_name": "BESTBUY_2017_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "mean of each year's attributable net earnings / revenue, times 100",
+      "recomputed_value": "2.81412893",
+      "result_unit": "percent",
+      "paths": [
+        [
+          {"line_item":"Net earnings attributable to Best Buy Co., Inc. shareholders","pdf_page":56,"years":[2017,2016,2015],"figures":["1,228","897","1,233"]},
+          {"line_item":"Revenue","pdf_page":56,"years":[2017,2016,2015],"figures":["39,403","39,528","40,339"]}
+        ]
+      ]
+    },
+    "financebench_id_02981": {
+      "doc_name": "CORNING_2021_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "mean of each year's operating income / net sales, times 100",
+      "recomputed_value": "10.28488626",
+      "result_unit": "percent",
+      "paths": [
+        [
+          {"line_item":"Operating income","pdf_page":65,"years":[2021,2020,2019],"figures":["2,112","509","1,306"]},
+          {"line_item":"Net sales","pdf_page":65,"years":[2021,2020,2019],"figures":["14,082","11,303","11,503"]}
+        ]
+      ]
+    },
+    "financebench_id_03069": {
+      "doc_name": "AMD_2015_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "depreciation and amortization / net revenue, times 100",
+      "recomputed_value": "4.18441493",
+      "result_unit": "percent",
+      "paths": [
+        [
+          {"line_item":"Depreciation and amortization","pdf_page":60,"years":[2015],"figures":["167"]},
+          {"line_item":"Net revenue","pdf_page":56,"years":[2015],"figures":["3,991"]}
+        ]
+      ]
+    },
+    "financebench_id_03282": {
+      "doc_name": "NETFLIX_2017_10K",
+      "source_unit": "USD_thousands",
+      "annotation_status": "verified",
+      "method": "current liabilities / 1,000 to express thousands in millions",
+      "recomputed_value": "5466.312",
+      "result_unit": "USD_millions",
+      "paths": [
+        [
+          {"line_item":"Total current liabilities","pdf_page":45,"years":[2017],"figures":["5,466,312"]}
+        ],
+        [
+          {"line_item":"Current content liabilities","pdf_page":45,"years":[2017],"figures":["4,173,041"]},
+          {"line_item":"Accounts payable","pdf_page":45,"years":[2017],"figures":["359,555"]},
+          {"line_item":"Accrued expenses","pdf_page":45,"years":[2017],"figures":["315,094"]},
+          {"line_item":"Deferred revenue","pdf_page":45,"years":[2017],"figures":["618,622"]}
+        ]
+      ]
+    },
+    "financebench_id_03620": {
+      "doc_name": "PEPSICO_2022_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "operating profit + D&A + signed capital spending",
+      "recomputed_value": "9068",
+      "result_unit": "USD_millions",
+      "paths": [
+        [
+          {"line_item":"Operating Profit","pdf_page":62,"years":[2022],"figures":["11,512"]},
+          {"line_item":"Depreciation and amortization","pdf_page":64,"years":[2022],"figures":["2,763"]},
+          {"line_item":"Capital spending","pdf_page":64,"years":[2022],"figures":["(5,207)"],"allow_magnitude":true}
+        ]
+      ]
+    },
+    "financebench_id_03718": {
+      "doc_name": "LOCKHEEDMARTIN_2022_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "((ending net sales / beginning net sales)^(1/2) - 1) × 100",
+      "recomputed_value": "0.44702677",
+      "result_unit": "percent",
+      "paths": [
+        [
+          {"line_item":"Total net sales","pdf_page":63,"years":[2022,2020],"figures":["65,984","65,398"]}
+        ]
+      ]
+    },
+    "financebench_id_03838": {
+      "doc_name": "BLOCK_2020_10K",
+      "source_unit": "USD_thousands",
+      "annotation_status": "verified",
+      "method": "(2020 total net revenue / 2019 total net revenue - 1) × 100",
+      "recomputed_value": "101.49735865",
+      "result_unit": "percent",
+      "paths": [
+        [
+          {"line_item":"Total net revenue","pdf_page":86,"years":[2020,2019],"figures":["9,497,578","4,713,500"]}
+        ],
+        [
+          {"line_item":"Transaction-based revenue","pdf_page":86,"years":[2020,2019],"figures":["3,294,978","3,081,074"]},
+          {"line_item":"Subscription and services-based revenue","pdf_page":86,"years":[2020,2019],"figures":["1,539,403","1,031,456"]},
+          {"line_item":"Hardware revenue","pdf_page":86,"years":[2020,2019],"figures":["91,654","84,505"]},
+          {"line_item":"Bitcoin revenue","pdf_page":86,"years":[2020,2019],"figures":["4,571,543","516,465"]}
+        ]
+      ]
+    },
+    "financebench_id_03849": {
+      "doc_name": "MGMRESORTS_2020_10K",
+      "source_unit": "USD_thousands",
+      "annotation_status": "verified",
+      "method": "mean of each year's |capital expenditures| / revenues, times 100",
+      "recomputed_value": "7.87014454",
+      "result_unit": "percent",
+      "paths": [
+        [
+          {"line_item":"Capital expenditures, net of construction payable","pdf_page":67,"years":[2020,2019,2018],"figures":["(270,579)","(739,006)","(1,486,843)"],"allow_magnitude":true},
+          {"line_item":"Unlabeled subtotal below revenue categories","pdf_page":65,"years":[2020,2019,2018],"figures":["5,162,082","12,899,672","11,763,096"]}
+        ]
+      ]
+    },
+    "financebench_id_03882": {
+      "doc_name": "AMCOR_2020_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "year-end trade receivables, net",
+      "recomputed_value": "1615.9",
+      "result_unit": "USD_millions",
+      "paths": [
+        [
+          {"line_item":"Trade receivables, net","pdf_page":50,"years":[2020],"figures":["1,615.9"]}
+        ]
+      ]
+    },
+    "financebench_id_04171": {
+      "doc_name": "MGMRESORTS_2018_10K",
+      "source_unit": "USD_thousands",
+      "annotation_status": "verified",
+      "method": "accounts payable / 1,000 to express thousands in millions",
+      "recomputed_value": "302.578",
+      "result_unit": "USD_millions",
+      "paths": [
+        [
+          {"line_item":"Accounts payable","pdf_page":57,"years":[2018],"figures":["302,578"]}
+        ]
+      ]
+    },
+    "financebench_id_04209": {
+      "doc_name": "COSTCO_2021_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "year-end total assets",
+      "recomputed_value": "59268",
+      "result_unit": "USD_millions",
+      "paths": [
+        [
+          {"line_item":"TOTAL ASSETS","pdf_page":38,"years":[2021],"figures":["59,268"]}
+        ]
+      ]
+    },
+    "financebench_id_04254": {
+      "doc_name": "AMERICANWATERWORKS_2021_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "operating income + depreciation and amortization",
+      "recomputed_value": "1832",
+      "result_unit": "USD_millions",
+      "paths": [
+        [
+          {"line_item":"Operating income","pdf_page":86,"years":[2021],"figures":["1,196"]},
+          {"line_item":"Depreciation and amortization","pdf_page":88,"years":[2021],"figures":["636"]}
+        ]
+      ]
+    },
+    "financebench_id_04302": {
+      "doc_name": "NIKE_2018_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "mean of each year's cost of sales / revenues, times 100",
+      "recomputed_value": "55.11458671",
+      "result_unit": "percent",
+      "paths": [
+        [
+          {"line_item":"Cost of sales","pdf_page":46,"years":[2018,2017,2016],"figures":["20,441","19,038","17,405"]},
+          {"line_item":"Revenues","pdf_page":46,"years":[2018,2017,2016],"figures":["36,397","34,350","32,376"]}
+        ]
+      ]
+    },
+    "financebench_id_04417": {
+      "doc_name": "BESTBUY_2019_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "year-end merchandise inventories",
+      "recomputed_value": "5409",
+      "result_unit": "USD_millions",
+      "paths": [
+        [
+          {"line_item":"Merchandise inventories","pdf_page":52,"years":[2019],"figures":["5,409"]}
+        ]
+      ]
+    },
+    "financebench_id_04458": {
+      "doc_name": "NETFLIX_2015_10K",
+      "source_unit": "USD_thousands",
+      "annotation_status": "verified",
+      "method": "(operating income + D&A of property, equipment and intangibles) / revenues, times 100",
+      "notes": "The official justification specifies this D&A row. Content-asset amortization is a separate cash-flow line.",
+      "recomputed_value": "5.4297279",
+      "result_unit": "percent",
+      "paths": [
+        [
+          {"line_item":"Operating income","pdf_page":40,"years":[2015],"figures":["305,826"]},
+          {"line_item":"Depreciation and amortization of property, equipment and intangibles","pdf_page":42,"years":[2015],"figures":["62,283"]},
+          {"line_item":"Revenues","pdf_page":40,"years":[2015],"figures":["6,779,511"]}
+        ]
+      ]
+    },
+    "financebench_id_04481": {
+      "doc_name": "PEPSICO_2022_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "(operating profit + depreciation and amortization) / net revenue, times 100",
+      "recomputed_value": "16.5235207",
+      "result_unit": "percent",
+      "paths": [
+        [
+          {"line_item":"Operating Profit","pdf_page":62,"years":[2022],"figures":["11,512"]},
+          {"line_item":"Depreciation and amortization","pdf_page":64,"years":[2022],"figures":["2,763"]},
+          {"line_item":"Net Revenue","pdf_page":62,"years":[2022],"figures":["86,392"]}
+        ]
+      ]
+    },
+    "financebench_id_04700": {
+      "doc_name": "MICROSOFT_2016_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "cost of revenue, or its product and service components added",
+      "recomputed_value": "32780",
+      "result_unit": "USD_millions",
+      "paths": [
+        [
+          {"line_item":"Total cost of revenue","pdf_page":52,"years":[2016],"figures":["32,780"]}
+        ],
+        [
+          {"line_item":"Product, in Cost of revenue","pdf_page":52,"years":[2016],"figures":["17,880"]},
+          {"line_item":"Service and other, in Cost of revenue","pdf_page":52,"years":[2016],"figures":["14,900"]}
+        ]
+      ]
+    },
+    "financebench_id_04784": {
+      "doc_name": "WALMART_2019_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "(FY2019 operating income / total revenues - FY2018 operating income / total revenues) × 100",
+      "notes": "Difference of margins in percentage points. The original answer uses %. The numeric label already records percentage_points.",
+      "recomputed_value": "0.18382866",
+      "result_unit": "percentage_points",
+      "paths": [
+        [
+          {"line_item":"Operating income","pdf_page":48,"years":[2019,2018],"figures":["21,957","20,437"]},
+          {"line_item":"Total revenues","pdf_page":48,"years":[2019,2018],"figures":["514,405","500,343"]}
+        ]
+      ]
+    },
+    "financebench_id_04980": {
+      "doc_name": "PEPSICO_2021_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "|capital spending| / 1,000 to express millions in billions",
+      "recomputed_value": "4.625",
+      "result_unit": "USD_billions",
+      "paths": [
+        [
+          {"line_item":"Capital spending","pdf_page":63,"years":[2021],"figures":["(4,625)"],"allow_magnitude":true}
+        ]
+      ]
+    },
+    "financebench_id_05718": {
+      "doc_name": "AMERICANWATERWORKS_2020_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "|dividends paid| / 1,000 to express millions in billions",
+      "notes": "The filing gives 0.389 billion and the official answer gives 0.40 billion, consistent with rounding to one decimal place. The exact filing magnitude falls outside 1% of the published gold. The numeric grade uses the published gold.",
+      "recomputed_value": "0.389",
+      "result_unit": "USD_billions",
+      "paths": [
+        [
+          {"line_item":"Dividends paid","pdf_page":86,"years":[2020],"figures":["(389)"],"allow_magnitude":true}
+        ]
+      ]
+    },
+    "financebench_id_06741": {
+      "doc_name": "WALMART_2020_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "mean of each year's (operating income + D&A) / total revenues, times 100",
+      "recomputed_value": "6.18517921",
+      "result_unit": "percent",
+      "paths": [
+        [
+          {"line_item":"Operating income","pdf_page":51,"years":[2020,2019,2018],"figures":["20,568","21,957","20,437"]},
+          {"line_item":"Depreciation and amortization","pdf_page":56,"years":[2020,2019,2018],"figures":["10,987","10,678","10,529"]},
+          {"line_item":"Total revenues","pdf_page":51,"years":[2020,2019,2018],"figures":["523,964","514,405","500,343"]}
+        ]
+      ]
+    },
+    "financebench_id_07661": {
+      "doc_name": "BLOCK_2020_10K",
+      "source_unit": "USD_thousands",
+      "annotation_status": "verified",
+      "method": "operating cash flow / 1,000 to express thousands in millions",
+      "recomputed_value": "381.603",
+      "result_unit": "USD_millions",
+      "paths": [
+        [
+          {"line_item":"Net cash provided by operating activities","pdf_page":90,"years":[2020],"figures":["381,603"]}
+        ]
+      ]
+    },
+    "financebench_id_07966": {
+      "doc_name": "ACTIVISIONBLIZZARD_2019_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "mean of each year's |capital expenditures| / total net revenues, times 100",
+      "recomputed_value": "1.91440949",
+      "result_unit": "percent",
+      "paths": [
+        [
+          {"line_item":"Capital expenditures","pdf_page":73,"years":[2019,2018,2017],"figures":["(116)","(131)","(155)"],"allow_magnitude":true},
+          {"line_item":"Total net revenues","pdf_page":70,"years":[2019,2018,2017],"figures":["6,489","7,500","7,017"]}
+        ]
+      ]
+    },
+    "financebench_id_08135": {
+      "doc_name": "AMAZON_2017_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "(2017 total net sales / 2016 total net sales - 1) × 100",
+      "recomputed_value": "30.79632612",
+      "result_unit": "percent",
+      "paths": [
+        [
+          {"line_item":"Total net sales","pdf_page":38,"years":[2017,2016],"figures":["177,866","135,987"]}
+        ],
+        [
+          {"line_item":"Net product sales","pdf_page":38,"years":[2017,2016],"figures":["118,573","94,665"]},
+          {"line_item":"Net service sales","pdf_page":38,"years":[2017,2016],"figures":["59,293","41,322"]}
+        ]
+      ]
+    },
+    "financebench_id_09724": {
+      "doc_name": "COCACOLA_2021_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "cost of goods sold / net operating revenues, times 100",
+      "recomputed_value": "39.72836632",
+      "result_unit": "percent",
+      "paths": [
+        [
+          {"line_item":"Cost of goods sold","pdf_page":62,"years":[2021],"figures":["15,357"]},
+          {"line_item":"Net Operating Revenues","pdf_page":62,"years":[2021],"figures":["38,655"]}
+        ]
+      ]
+    },
+    "financebench_id_10285": {
+      "doc_name": "BOEING_2018_10K",
+      "source_unit": "USD_millions",
+      "annotation_status": "verified",
+      "method": "year-end property, plant and equipment, net",
+      "recomputed_value": "12645",
+      "result_unit": "USD_millions",
+      "paths": [
+        [
+          {"line_item":"Property, plant and equipment, net","pdf_page":52,"years":[2018],"figures":["12,645"]}
+        ]
+      ]
+    }
+  }
+}

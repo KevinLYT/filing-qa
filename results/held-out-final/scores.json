@@ -1,0 +1,6553 @@
+{
+  "summary": {
+    "B0": {
+      "n": 26,
+      "correct": 0,
+      "incorrect": 22,
+      "refusal": 3,
+      "api_error": 0,
+      "parse_error": 1,
+      "input_error": 0,
+      "missing_prediction": 0,
+      "accuracy": 0.0,
+      "automatic_citation": {
+        "not_applicable": 5,
+        "fail": 21
+      },
+      "human_review": {
+        "not_applicable": 26
+      },
+      "model_calls_recorded": 26,
+      "latencies_recorded": 26,
+      "mean_elapsed_seconds": 3.1266,
+      "usage_records": 26,
+      "prompt_tokens_recorded": 9397,
+      "completion_tokens_recorded": 8539,
+      "estimated_api_usd": "0",
+      "mean_estimated_api_usd": "0"
+    },
+    "B1": {
+      "n": 26,
+      "correct": 4,
+      "incorrect": 10,
+      "refusal": 8,
+      "api_error": 0,
+      "parse_error": 4,
+      "input_error": 0,
+      "missing_prediction": 0,
+      "accuracy": 0.15384615384615385,
+      "automatic_citation": {
+        "fail": 14,
+        "not_applicable": 12
+      },
+      "human_review": {
+        "pending": 14,
+        "not_applicable": 12
+      },
+      "model_calls_recorded": 26,
+      "latencies_recorded": 26,
+      "mean_elapsed_seconds": 3.4179,
+      "usage_records": 26,
+      "prompt_tokens_recorded": 93837,
+      "completion_tokens_recorded": 7871,
+      "estimated_api_usd": "0",
+      "mean_estimated_api_usd": "0"
+    },
+    "B2": {
+      "n": 26,
+      "correct": 0,
+      "incorrect": 15,
+      "refusal": 5,
+      "api_error": 0,
+      "parse_error": 6,
+      "input_error": 0,
+      "missing_prediction": 0,
+      "accuracy": 0.0,
+      "automatic_citation": {
+        "not_applicable": 11,
+        "fail": 14,
+        "pass": 1
+      },
+      "human_review": {
+        "not_applicable": 11,
+        "pending": 15
+      },
+      "model_calls_recorded": 157,
+      "latencies_recorded": 26,
+      "mean_elapsed_seconds": 10.5446,
+      "usage_records": 26,
+      "prompt_tokens_recorded": 366115,
+      "completion_tokens_recorded": 15224,
+      "estimated_api_usd": "0",
+      "mean_estimated_api_usd": "0"
+    },
+    "Ours": {
+      "n": 26,
+      "correct": 0,
+      "incorrect": 0,
+      "refusal": 26,
+      "api_error": 0,
+      "parse_error": 0,
+      "input_error": 0,
+      "missing_prediction": 0,
+      "accuracy": 0.0,
+      "automatic_citation": {
+        "not_applicable": 26
+      },
+      "human_review": {
+        "not_applicable": 26
+      },
+      "model_calls_recorded": 125,
+      "latencies_recorded": 26,
+      "mean_elapsed_seconds": 7.9228,
+      "usage_records": 26,
+      "prompt_tokens_recorded": 198426,
+      "completion_tokens_recorded": 11391,
+      "estimated_api_usd": "0",
+      "mean_estimated_api_usd": "0"
+    },
+    "NoVerifier": {
+      "n": 26,
+      "correct": 0,
+      "incorrect": 12,
+      "refusal": 14,
+      "api_error": 0,
+      "parse_error": 0,
+      "input_error": 0,
+      "missing_prediction": 0,
+      "accuracy": 0.0,
+      "automatic_citation": {
+        "not_applicable": 14,
+        "fail": 12
+      },
+      "human_review": {
+        "not_applicable": 14,
+        "pending": 12
+      },
+      "model_calls_recorded": 52,
+      "latencies_recorded": 26,
+      "mean_elapsed_seconds": 3.4935,
+      "usage_records": 26,
+      "prompt_tokens_recorded": 59900,
+      "completion_tokens_recorded": 4218,
+      "estimated_api_usd": "0",
+      "mean_estimated_api_usd": "0"
+    }
+  },
+  "rows": [
+    {
+      "question_id": "financebench_id_02608",
+      "system": "B0",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "BESTBUY_2017_10K",
+          56
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "2.81412893",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_02981",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "8.5",
+        "predicted_unit": "percent",
+        "gold": "10.3",
+        "gold_unit": "percent",
+        "absolute_error": "1.8",
+        "allowed_absolute_error": "0.1"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "Corning Inc. 10-K",
+            "pdf_page": 118,
+            "chunk_id": "Corning Inc. 10-K:118",
+            "label": "FY2019 unadjusted operating income",
+            "raw_number": "1,044,000,000 USD",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Corning Inc. 10-K",
+            "pdf_page": 118,
+            "chunk_id": "Corning Inc. 10-K:118",
+            "label": "FY2019 total revenue",
+            "raw_number": "12,275,000,000 USD",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Corning Inc. 10-K",
+            "pdf_page": 120,
+            "chunk_id": "Corning Inc. 10-K:120",
+            "label": "FY2020 unadjusted operating income",
+            "raw_number": "1,044,000,000 USD",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Corning Inc. 10-K",
+            "pdf_page": 120,
+            "chunk_id": "Corning Inc. 10-K:120",
+            "label": "FY2020 total revenue",
+            "raw_number": "12,275,000,000 USD",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Corning Inc. 10-K",
+            "pdf_page": 122,
+            "chunk_id": "Corning Inc. 10-K:122",
+            "label": "FY2021 unadjusted operating income",
+            "raw_number": "1,044,000,000 USD",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Corning Inc. 10-K",
+            "pdf_page": 122,
+            "chunk_id": "Corning Inc. 10-K:122",
+            "label": "FY2021 total revenue",
+            "raw_number": "12,275,000,000 USD",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "2,112",
+          "509",
+          "1,306",
+          "14,082",
+          "11,303",
+          "11,503"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "CORNING_2021_10K",
+          65
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "10.28488626",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03069",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "100.0",
+        "predicted_unit": "percentage_points",
+        "gold": "4.2",
+        "gold_unit": "percent",
+        "reason": "incompatible_units"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "AMD 10-K",
+            "pdf_page": 106,
+            "chunk_id": "AMD:10-K_106:Depreciation_and_amortization__D&A__from_cash_flow_statement__FY2015",
+            "label": "Depreciation and amortization (D&A) from cash flow statement FY2015",
+            "raw_number": "1,018,000,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "AMD 10-K",
+            "pdf_page": 106,
+            "chunk_id": "AMD:10-K_106:Net_income_for_FY2015",
+            "label": "Net income for FY2015",
+            "raw_number": "1,018,000,000",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "167",
+          "3,991"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "AMD_2015_10K",
+          56
+        ],
+        [
+          "AMD_2015_10K",
+          60
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "4.18441493",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03282",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "1000000000",
+        "predicted_unit": "USD",
+        "gold": "5466000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "4466000000.00",
+        "allowed_absolute_error": "54660000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "Netflix, Inc. Annual Report",
+            "pdf_page": 12,
+            "chunk_id": "Netflix_Inc:Annual_Report_2017-03-31_12",
+            "label": "Total current liabilities",
+            "raw_number": "1,000,000,000",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "5,466,312"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "NETFLIX_2017_10K",
+          45
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "5466.312",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03620",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "20000000",
+        "predicted_unit": "USD",
+        "gold": "9068000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "9048000000.00",
+        "allowed_absolute_error": "90680000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "PepsiCo 2022 10-K",
+            "pdf_page": 123,
+            "chunk_id": "PepsiCo:2022_10K_123",
+            "label": "FY2022 unadjusted operating income (OIBT) USD millions",
+            "raw_number": "11,500",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "PepsiCo 2022 10-K",
+            "pdf_page": 124,
+            "chunk_id": "PepsiCo:2022_10K_124",
+            "label": "FY2022 depreciation and amortization (D&A) USD millions",
+            "raw_number": "1,200",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "11,512",
+          "2,763",
+          "(5,207)"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "PEPSICO_2022_10K",
+          62
+        ],
+        [
+          "PEPSICO_2022_10K",
+          64
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "9068",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03718",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "0.1",
+        "predicted_unit": "percentage_points",
+        "gold": "0.4",
+        "gold_unit": "percent",
+        "reason": "incompatible_units"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "Lockheed Martin 2022 10-K",
+            "pdf_page": 118,
+            "chunk_id": "Lockheed Martin:2022 10-K:118",
+            "label": "FY2020 revenue is $38,778 million",
+            "raw_number": "$38,778 million",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Lockheed Martin 2022 10-K",
+            "pdf_page": 118,
+            "chunk_id": "Lockheed Martin:2022 10-K:118",
+            "label": "FY2022 revenue is $41,000 million",
+            "raw_number": "$41,000 million",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "65,984",
+          "65,398"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "LOCKHEEDMARTIN_2022_10K",
+          63
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "0.44702677",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03838",
+      "system": "B0",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "BLOCK_2020_10K",
+          86
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "101.49735865",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03849",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "10.9",
+        "predicted_unit": "percent",
+        "gold": "7.9",
+        "gold_unit": "percent",
+        "absolute_error": "3.0",
+        "allowed_absolute_error": "0.1"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "MGM Resorts Inc. 10-K for the year ended December 31, 2020",
+            "pdf_page": 144,
+            "chunk_id": "MGM Resorts Inc.10-K:2020-123-144",
+            "label": "FY2018 capex as a % of revenue",
+            "raw_number": "10.4%",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "MGM Resorts Inc. 10-K for the year ended December 31, 2020",
+            "pdf_page": 144,
+            "chunk_id": "MGM Resorts Inc.10-K:2020-123-144",
+            "label": "FY2019 capex as a % of revenue",
+            "raw_number": "11.2%",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "MGM Resorts Inc. 10-K for the year ended December 31, 2020",
+            "pdf_page": 144,
+            "chunk_id": "MGM Resorts Inc.10-K:2020-123-144",
+            "label": "FY2020 capex as a % of revenue",
+            "raw_number": "11.3%",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "(270,579)",
+          "(739,006)",
+          "(1,486,843)",
+          "5,162,082",
+          "12,899,672",
+          "11,763,096"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "MGMRESORTS_2020_10K",
+          65
+        ],
+        [
+          "MGMRESORTS_2020_10K",
+          67
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "7.87014454",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03882",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "20000000",
+        "predicted_unit": "USD",
+        "gold": "1616000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "1596000000.00",
+        "allowed_absolute_error": "16160000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "Amcor Annual Report 2020",
+            "pdf_page": 123,
+            "chunk_id": "AnnualReport2020:123",
+            "label": "Total Accounts Receivable for FY2020: $1,074.5 million",
+            "raw_number": "$1,074.5 million",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Amcor Annual Report 2020",
+            "pdf_page": 123,
+            "chunk_id": "AnnualReport2020:123",
+            "label": "Allowance for Doubtful Accounts for FY2020: $11.5 million",
+            "raw_number": "$11.5 million",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "1,615.9"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "AMCOR_2020_10K",
+          50
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "1615.9",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04171",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "123450000.00",
+        "predicted_unit": "USD",
+        "gold": "303000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "179550000.00",
+        "allowed_absolute_error": "3030000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "10-K:2018",
+            "pdf_page": 123,
+            "chunk_id": "10-K:2018:123:Accounts Payable:USD_millions",
+            "label": "Accounts Payable, Year End FY2018",
+            "raw_number": "123.45 USD_millions",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "302,578"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "MGMRESORTS_2018_10K",
+          57
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "302.578",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04209",
+      "system": "B0",
+      "outcome": "parse_error",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "COSTCO_2021_10K",
+          38
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "59268",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04254",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "1044000000",
+        "predicted_unit": "USD",
+        "gold": "1832000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "788000000.00",
+        "allowed_absolute_error": "18320000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "10-K: 2021",
+            "pdf_page": 124,
+            "chunk_id": "10-K:2021:124:American Water Works FY2021 EBITDA",
+            "label": "American Water Works FY2021 EBITDA",
+            "raw_number": "1,044,000",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "1,196",
+          "636"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "AMERICANWATERWORKS_2021_10K",
+          86
+        ],
+        [
+          "AMERICANWATERWORKS_2021_10K",
+          88
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "1832",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04302",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "23.0",
+        "predicted_unit": "percent",
+        "gold": "55.1",
+        "gold_unit": "percent",
+        "absolute_error": "32.1",
+        "allowed_absolute_error": "0.1"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "Nike 10-K",
+            "pdf_page": 12,
+            "chunk_id": "Nike:12-1",
+            "label": "Cost of goods sold (COGS) for FY2016",
+            "raw_number": "USD 10,000,000,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Nike 10-K",
+            "pdf_page": 12,
+            "chunk_id": "Nike:12-2",
+            "label": "Revenue for FY2016",
+            "raw_number": "USD 38,000,000,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Nike 10-K",
+            "pdf_page": 13,
+            "chunk_id": "Nike:13-1",
+            "label": "Cost of goods sold (COGS) for FY2017",
+            "raw_number": "USD 11,000,000,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Nike 10-K",
+            "pdf_page": 13,
+            "chunk_id": "Nike:13-2",
+            "label": "Revenue for FY2017",
+            "raw_number": "USD 40,000,000,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Nike 10-K",
+            "pdf_page": 14,
+            "chunk_id": "Nike:14-1",
+            "label": "Cost of goods sold (COGS) for FY2018",
+            "raw_number": "USD 12,000,000,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Nike 10-K",
+            "pdf_page": 14,
+            "chunk_id": "Nike:14-2",
+            "label": "Revenue for FY2018",
+            "raw_number": "USD 42,000,000,000",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "20,441",
+          "19,038",
+          "17,405",
+          "36,397",
+          "34,350",
+          "32,376"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "NIKE_2018_10K",
+          46
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "55.11458671",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04417",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "1044000000",
+        "predicted_unit": "USD",
+        "gold": "5409000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "4365000000.00",
+        "allowed_absolute_error": "54090000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "Best Buy 10-K",
+            "pdf_page": 101,
+            "chunk_id": "Best Buy:10-K_2019_101_Inventories",
+            "label": "Inventories, year end FY2019",
+            "raw_number": "1,044,000,000 USD",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "5,409"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "BESTBUY_2019_10K",
+          52
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "5409",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04458",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "47.58",
+        "predicted_unit": "percent",
+        "gold": "5.4",
+        "gold_unit": "percent",
+        "absolute_error": "42.18",
+        "allowed_absolute_error": "0.1"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "Netflix 2015 10-K",
+            "pdf_page": 116,
+            "chunk_id": "Netflix:2015-10-K-116",
+            "label": "FY2015 unadjusted operating income",
+            "raw_number": "$4,788,000,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Netflix 2015 10-K",
+            "pdf_page": 116,
+            "chunk_id": "Netflix:2015-10-K-116",
+            "label": "FY2015 D&A",
+            "raw_number": "$1,018,000,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Netflix 2015 10-K",
+            "pdf_page": 116,
+            "chunk_id": "Netflix:2015-10-K-116",
+            "label": "FY2015 revenue",
+            "raw_number": "$12,188,000,000",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "305,826",
+          "62,283",
+          "6,779,511"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "NETFLIX_2015_10K",
+          40
+        ],
+        [
+          "NETFLIX_2015_10K",
+          42
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "5.4297279",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04481",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "20",
+        "predicted_unit": "percentage_points",
+        "gold": "16.5",
+        "gold_unit": "percent",
+        "reason": "incompatible_units"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "PepsiCo 2022 10-K",
+            "pdf_page": 123,
+            "chunk_id": "PepsiCo_10K_2022:123",
+            "label": "FY2022 Unadjusted operating income",
+            "raw_number": "1,000,000,000 USD",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "PepsiCo 2022 10-K",
+            "pdf_page": 124,
+            "chunk_id": "PepsiCo_10K_2022:124",
+            "label": "FY2022 D&A",
+            "raw_number": "200,000,000 USD",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "11,512",
+          "2,763",
+          "86,392"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "PEPSICO_2022_10K",
+          62
+        ],
+        [
+          "PEPSICO_2022_10K",
+          64
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "16.5235207",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04700",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "23530000000",
+        "predicted_unit": "USD",
+        "gold": "32780000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "9250000000.00",
+        "allowed_absolute_error": "327800000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "Microsoft 10-K for the year ended December 31, 2016",
+            "pdf_page": 10,
+            "chunk_id": "Microsoft:10-K_2016-12-31:10",
+            "label": "Gross profit for FY2016",
+            "raw_number": "78,708",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Microsoft 10-K for the year ended December 31, 2016",
+            "pdf_page": 10,
+            "chunk_id": "Microsoft:10-K_2016-12-31:11",
+            "label": "Total revenue for FY2016",
+            "raw_number": "102,278",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "32,780"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "MICROSOFT_2016_10K",
+          52
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "32780",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04784",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "1.0",
+        "predicted_unit": "percent",
+        "gold": "0.2",
+        "gold_unit": "percentage_points",
+        "reason": "incompatible_units"
+      },
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "WALMART_2019_10K",
+          48
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "0.18382866",
+        "unit": "percentage_points",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04980",
+      "system": "B0",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "PEPSICO_2021_10K",
+          63
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "4.625",
+        "unit": "USD_billions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_05718",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "1000000000",
+        "predicted_unit": "USD",
+        "gold": "400000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "600000000.00",
+        "allowed_absolute_error": "4000000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "10-K",
+            "pdf_page": 114,
+            "chunk_id": "10-K:114",
+            "label": "Cash dividends paid, net of refunds",
+            "raw_number": "1.00",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "(389)"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "AMERICANWATERWORKS_2020_10K",
+          86
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "0.389",
+        "unit": "USD_billions",
+        "within_official_tolerance": false
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_06741",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "10.3",
+        "predicted_unit": "percent",
+        "gold": "6.2",
+        "gold_unit": "percent",
+        "absolute_error": "4.1",
+        "allowed_absolute_error": "0.1"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "WMT 2018 10-K",
+            "pdf_page": 114,
+            "chunk_id": "WMT:2018_10-K_114",
+            "label": "FY2018 unadjusted EBITDA margin",
+            "raw_number": "10.4%",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "WMT 2019 10-K",
+            "pdf_page": 114,
+            "chunk_id": "WMT:2019_10-K_114",
+            "label": "FY2019 unadjusted EBITDA margin",
+            "raw_number": "10.2%",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "WMT 2020 10-K",
+            "pdf_page": 114,
+            "chunk_id": "WMT:2020_10-K_114",
+            "label": "FY2020 unadjusted EBITDA margin",
+            "raw_number": "10.3%",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "20,568",
+          "21,957",
+          "20,437",
+          "10,987",
+          "10,678",
+          "10,529",
+          "523,964",
+          "514,405",
+          "500,343"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "WALMART_2020_10K",
+          51
+        ],
+        [
+          "WALMART_2020_10K",
+          56
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "6.18517921",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_07661",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "1041000000",
+        "predicted_unit": "USD",
+        "gold": "382000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "659000000.00",
+        "allowed_absolute_error": "3820000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "10-K: 2020",
+            "pdf_page": 114,
+            "chunk_id": "10-K:2020:114:Cash flow from operating activities:1",
+            "label": "Cash flow from operating activities:1",
+            "raw_number": "1,041",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "381,603"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "BLOCK_2020_10K",
+          90
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "381.603",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_07966",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "33.3",
+        "predicted_unit": "percentage_points",
+        "gold": "1.9",
+        "gold_unit": "percent",
+        "reason": "incompatible_units"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "10-K: Activision Blizzard Inc. 2017",
+            "pdf_page": 118,
+            "chunk_id": "10-K:ActivisionBlizzardInc.2017:118",
+            "label": "Capex for FY2017: $1,000,000",
+            "raw_number": "$1,000,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "10-K: Activision Blizzard Inc. 2018",
+            "pdf_page": 118,
+            "chunk_id": "10-K:ActivisionBlizzardInc.2018:118",
+            "label": "Capex for FY2018: $1,000,000",
+            "raw_number": "$1,000,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "10-K: Activision Blizzard Inc. 2019",
+            "pdf_page": 118,
+            "chunk_id": "10-K:ActivisionBlizzardInc.2019:118",
+            "label": "Capex for FY2019: $1,000,000",
+            "raw_number": "$1,000,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "10-K: Activision Blizzard Inc. 2017",
+            "pdf_page": 119,
+            "chunk_id": "10-K:ActivisionBlizzardInc.2017:119",
+            "label": "Revenue for FY2017: $1,000,000,000",
+            "raw_number": "$1,000,000,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "10-K: Activision Blizzard Inc. 2018",
+            "pdf_page": 119,
+            "chunk_id": "10-K:ActivisionBlizzardInc.2018:119",
+            "label": "Revenue for FY2018: $1,000,000,000",
+            "raw_number": "$1,000,000,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "10-K: Activision Blizzard Inc. 2019",
+            "pdf_page": 119,
+            "chunk_id": "10-K:ActivisionBlizzardInc.2019:119",
+            "label": "Revenue for FY2019: $1,000,000,000",
+            "raw_number": "$1,000,000,000",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "(116)",
+          "(131)",
+          "(155)",
+          "6,489",
+          "7,500",
+          "7,017"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "ACTIVISIONBLIZZARD_2019_10K",
+          70
+        ],
+        [
+          "ACTIVISIONBLIZZARD_2019_10K",
+          73
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "1.91440949",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_08135",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "20.0",
+        "predicted_unit": "percentage_points",
+        "gold": "30.8",
+        "gold_unit": "percent",
+        "reason": "incompatible_units"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "10-K:Amazon.com, Inc. 2016 Form",
+            "pdf_page": 11,
+            "chunk_id": "10-K:Amazon.com, Inc. 2016 Form:11",
+            "label": "Revenue for FY2016: $59.7 billion",
+            "raw_number": "$59.7 billion",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "10-K:Amazon.com, Inc. 2017 Form",
+            "pdf_page": 11,
+            "chunk_id": "10-K:Amazon.com, Inc. 2017 Form:11",
+            "label": "Revenue for FY2017: $74.9 billion",
+            "raw_number": "$74.9 billion",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "177,866",
+          "135,987"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "AMAZON_2017_10K",
+          38
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "30.79632612",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_09724",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "20",
+        "predicted_unit": "percentage_points",
+        "gold": "39.7",
+        "gold_unit": "percent",
+        "reason": "incompatible_units"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "Income Statement 2021",
+            "pdf_page": 12,
+            "chunk_id": "IncomeStatement2021:12:C01",
+            "label": "FY2021 COGS",
+            "raw_number": "21,044,700,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Income Statement 2021",
+            "pdf_page": 12,
+            "chunk_id": "IncomeStatement2021:12:C02",
+            "label": "FY2021 Gross Profit",
+            "raw_number": "11,044,700,000",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "15,357",
+          "38,655"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "COCACOLA_2021_10K",
+          62
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "39.72836632",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_10285",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "7000000000",
+        "predicted_unit": "USD",
+        "gold": "12645000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "5645000000.00",
+        "allowed_absolute_error": "126450000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "Boeing 2018 10-K",
+            "pdf_page": 114,
+            "chunk_id": "Boeing:2018_10-K_114",
+            "label": "Total Property, Plant, and Equipment (PP&E) as of December 31, 2018",
+            "raw_number": "11,000,000,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Boeing 2018 10-K",
+            "pdf_page": 114,
+            "chunk_id": "Boeing:2018_10-K_114",
+            "label": "Accumulated Depreciation as of December 31, 2018",
+            "raw_number": "4,000,000,000",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "12,645"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "BOEING_2018_10K",
+          52
+        ]
+      ],
+      "gold_page_hits": null,
+      "reference_recalculation": {
+        "value": "12645",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_02608",
+      "system": "B1",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "0.2",
+        "predicted_unit": "percentage_points",
+        "gold": "2.8",
+        "gold_unit": "percent",
+        "reason": "incompatible_units"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "BESTBUY_2017_10K",
+            "pdf_page": 81,
+            "chunk_id": "BESTBUY_2017_10K:p81:c1",
+            "label": "2017   2016   2015 Numerator (in millions)",
+            "raw_number": "$  1,207   $  807   $  1,246",
+            "visible": true,
+            "number_found": false
+          },
+          {
+            "doc_name": "BESTBUY_2017_10K",
+            "pdf_page": 96,
+            "chunk_id": "BESTBUY_2017_10K:p96:c1",
+            "label": "2017   2016   2015 Numerator (in millions)",
+            "raw_number": "$  1,207   $  807   $  1,246",
+            "visible": true,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "1,228",
+          "897",
+          "1,233",
+          "39,403",
+          "39,528",
+          "40,339"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "BESTBUY_2017_10K",
+          56
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "2.81412893",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_02981",
+      "system": "B1",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "0.2",
+        "predicted_unit": "percentage_points",
+        "gold": "10.3",
+        "gold_unit": "percent",
+        "reason": "incompatible_units"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "CORNING_2021_10K",
+            "pdf_page": 65,
+            "chunk_id": "CORNING_2021_10K:p65:c1",
+            "label": "Operating income (2021) $ 2,112",
+            "raw_number": "2,112",
+            "visible": true,
+            "number_found": true
+          },
+          {
+            "doc_name": "CORNING_2021_10K",
+            "pdf_page": 65,
+            "chunk_id": "CORNING_2021_10K:p65:c1",
+            "label": "Operating income (2020) $ 509",
+            "raw_number": "509",
+            "visible": true,
+            "number_found": true
+          },
+          {
+            "doc_name": "CORNING_2021_10K",
+            "pdf_page": 65,
+            "chunk_id": "CORNING_2021_10K:p65:c1",
+            "label": "Operating income (2019) $ 1,306",
+            "raw_number": "1,306",
+            "visible": true,
+            "number_found": true
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "pass",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "14,082",
+          "11,303",
+          "11,503"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "CORNING_2021_10K",
+          65
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "CORNING_2021_10K",
+          65
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "10.28488626",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_03069",
+      "system": "B1",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "25.21",
+        "predicted_unit": "percentage_points",
+        "gold": "4.2",
+        "gold_unit": "percent",
+        "reason": "incompatible_units"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "AMD_2015_10K:p60:c1",
+            "pdf_page": 60,
+            "chunk_id": "AMD_2015_10K:p60:c1:157",
+            "label": "Cash flows from operating activities: Depreciation and amortization",
+            "raw_number": "167",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "AMD_2015_10K:p60:c1",
+            "pdf_page": 60,
+            "chunk_id": "AMD_2015_10K:p60:c1:158",
+            "label": "Net loss",
+            "raw_number": "-660",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "167",
+          "3,991"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "AMD_2015_10K",
+          56
+        ],
+        [
+          "AMD_2015_10K",
+          60
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "AMD_2015_10K",
+          60
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "4.18441493",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_03282",
+      "system": "B1",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "5466312000000000",
+        "predicted_unit": "USD",
+        "gold": "5466000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "5466306534000000.00",
+        "allowed_absolute_error": "54660000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "NETFLIX_2017_10K:p45:c1",
+            "pdf_page": 45,
+            "chunk_id": "NETFLIX_2017_10K:p45:c1:1",
+            "label": "As of December 31, 2017, we had current content liabilities of $4,173,041,000.",
+            "raw_number": "$  5,466,312",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "5,466,312"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "NETFLIX_2017_10K",
+          45
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "NETFLIX_2017_10K",
+          45
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "5466.312",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_03620",
+      "system": "B1",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "11741000000",
+        "predicted_unit": "USD",
+        "gold": "9068000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "2673000000.00",
+        "allowed_absolute_error": "90680000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "PEPSICO_2022_10K:p64:c1",
+            "pdf_page": 64,
+            "chunk_id": "PEPSICO_2022_10K:p64:c1:64",
+            "label": "2022 Net income $ 8,978 $ 7,679 $ 7,175",
+            "raw_number": "$ 8,978",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "PEPSICO_2022_10K:p64:c1",
+            "pdf_page": 64,
+            "chunk_id": "PEPSICO_2022_10K:p64:c1:64",
+            "label": "2022 Depreciation and amortization 2,763 2,710 2,548",
+            "raw_number": "$ 2,763",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "11,512",
+          "2,763",
+          "(5,207)"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "PEPSICO_2022_10K",
+          62
+        ],
+        [
+          "PEPSICO_2022_10K",
+          64
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "PEPSICO_2022_10K",
+          64
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "9068",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_03718",
+      "system": "B1",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "LOCKHEEDMARTIN_2022_10K",
+          63
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "0.44702677",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03838",
+      "system": "B1",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "68.7",
+        "predicted_unit": "percentage_points",
+        "gold": "101.5",
+        "gold_unit": "percent",
+        "reason": "incompatible_units"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "BLOCK_2020_10K:p22:c1",
+            "pdf_page": 22,
+            "chunk_id": "BLOCK_2020_10K:p22:c1:1",
+            "label": "Revenue in FY2020 and FY2019",
+            "raw_number": "$375.4 million and $213.1 million",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "9,497,578",
+          "4,713,500"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "BLOCK_2020_10K",
+          86
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "101.49735865",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_03849",
+      "system": "B1",
+      "outcome": "parse_error",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "MGMRESORTS_2020_10K",
+          65
+        ],
+        [
+          "MGMRESORTS_2020_10K",
+          67
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "MGMRESORTS_2020_10K",
+          67
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "7.87014454",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03882",
+      "system": "B1",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "AMCOR_2020_10K",
+          50
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "1615.9",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04171",
+      "system": "B1",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "24146000000",
+        "predicted_unit": "USD",
+        "gold": "303000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "23843000000.00",
+        "allowed_absolute_error": "3030000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "MGMRESORTS_2018_10K:p176:c1",
+            "pdf_page": 176,
+            "chunk_id": "MGMRESORTS_2018_10K:p176:c1:176:c1:1",
+            "label": "Accounts payable and accrued liabilities (thousands)",
+            "raw_number": "$ 24,146",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "302,578"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "MGMRESORTS_2018_10K",
+          57
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "302.578",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_04209",
+      "system": "B1",
+      "outcome": "correct",
+      "numeric_comparison": {
+        "predicted": "59268000000",
+        "predicted_unit": "USD",
+        "gold": "59268000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "0.00",
+        "allowed_absolute_error": "592680000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "COSTCO_2021_10K:p38:c1",
+            "pdf_page": 38,
+            "chunk_id": "COSTCO_2021_10K:p38:c1:38",
+            "label": "Total current assets 29,505 28,120",
+            "raw_number": "Total current assets 29,505 28,120",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "COSTCO_2021_10K:p38:c1",
+            "pdf_page": 38,
+            "chunk_id": "COSTCO_2021_10K:p38:c1:38",
+            "label": "Total assets 59,268 55,556",
+            "raw_number": "Total assets 59,268 55,556",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "59,268"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "COSTCO_2021_10K",
+          38
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "COSTCO_2021_10K",
+          38
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "59268",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_04254",
+      "system": "B1",
+      "outcome": "correct",
+      "numeric_comparison": {
+        "predicted": "1832000000",
+        "predicted_unit": "USD",
+        "gold": "1832000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "0.00",
+        "allowed_absolute_error": "18320000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "AMERICANWATERWORKS_2021_10K:p86:c1",
+            "pdf_page": 86,
+            "chunk_id": "p86:c1:1",
+            "label": "Operating income 2021",
+            "raw_number": "1,196",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "AMERICANWATERWORKS_2021_10K:p69:c1",
+            "pdf_page": 69,
+            "chunk_id": "p69:c1:2",
+            "label": "Depreciation and amortization 2021",
+            "raw_number": "636",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "1,196",
+          "636"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "AMERICANWATERWORKS_2021_10K",
+          86
+        ],
+        [
+          "AMERICANWATERWORKS_2021_10K",
+          88
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "AMERICANWATERWORKS_2021_10K",
+          86
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "1832",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_04302",
+      "system": "B1",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "NIKE_2018_10K",
+          46
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "55.11458671",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04417",
+      "system": "B1",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "BESTBUY_2019_10K",
+          52
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "5409",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04458",
+      "system": "B1",
+      "outcome": "parse_error",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "NETFLIX_2015_10K",
+          40
+        ],
+        [
+          "NETFLIX_2015_10K",
+          42
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "5.4297279",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04481",
+      "system": "B1",
+      "outcome": "parse_error",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "PEPSICO_2022_10K",
+          62
+        ],
+        [
+          "PEPSICO_2022_10K",
+          64
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "16.5235207",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04700",
+      "system": "B1",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "MICROSOFT_2016_10K",
+          52
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "32780",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04784",
+      "system": "B1",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "-0.1",
+        "predicted_unit": "percent",
+        "gold": "0.2",
+        "gold_unit": "percentage_points",
+        "reason": "incompatible_units"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "WALMART_2019_10K:p35:c1",
+            "pdf_page": 35,
+            "chunk_id": "WALMART_2019_10K:p35:c1:1",
+            "label": "Walmart U.S. Segment Operating income as a percentage of net sales 2019 5.2%",
+            "raw_number": "5.2%",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "WALMART_2019_10K:p35:c1",
+            "pdf_page": 35,
+            "chunk_id": "WALMART_2019_10K:p35:c1:2",
+            "label": "Walmart U.S. Segment Operating income as a percentage of net sales 2018 5.3%",
+            "raw_number": "5.3%",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "21,957",
+          "20,437",
+          "514,405",
+          "500,343"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "WALMART_2019_10K",
+          48
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "0.18382866",
+        "unit": "percentage_points",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_04980",
+      "system": "B1",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "1000000000",
+        "predicted_unit": "USD",
+        "gold": "4600000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "3600000000.00",
+        "allowed_absolute_error": "46000000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "PEPSICO_2021_10K",
+            "pdf_page": 54,
+            "chunk_id": "PEPSICO_2021_10K:p54:c1",
+            "label": "Property, plant and equipment, net",
+            "raw_number": "1.0",
+            "visible": true,
+            "number_found": true
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "pass",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "(4,625)"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "PEPSICO_2021_10K",
+          63
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "4.625",
+        "unit": "USD_billions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_05718",
+      "system": "B1",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "389000000",
+        "predicted_unit": "USD",
+        "gold": "400000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "11000000.00",
+        "allowed_absolute_error": "4000000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "AMERICANWATERWORKS_2020_10K:p106:c1",
+            "pdf_page": 106,
+            "chunk_id": "AMERICANWATERWORKS_2020_10K:p106:c1:106:1",
+            "label": "2020 Dividends paid",
+            "raw_number": "389 million",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "(389)"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "AMERICANWATERWORKS_2020_10K",
+          86
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "0.389",
+        "unit": "USD_billions",
+        "within_official_tolerance": false
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_06741",
+      "system": "B1",
+      "outcome": "parse_error",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "WALMART_2020_10K",
+          51
+        ],
+        [
+          "WALMART_2020_10K",
+          56
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "6.18517921",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_07661",
+      "system": "B1",
+      "outcome": "correct",
+      "numeric_comparison": {
+        "predicted": "381603000",
+        "predicted_unit": "USD",
+        "gold": "382000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "397000.00",
+        "allowed_absolute_error": "3820000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "BLOCK_2020_10K",
+            "pdf_page": 74,
+            "chunk_id": "BLOCK_2020_10K:p74:c1",
+            "label": "Net cash provided by operating activities for 2020",
+            "raw_number": "$  381,603",
+            "visible": true,
+            "number_found": true
+          },
+          {
+            "doc_name": "BLOCK_2020_10K",
+            "pdf_page": 138,
+            "chunk_id": "BLOCK_2020_10K:p138:c1",
+            "label": "Revenue by geography for 2020",
+            "raw_number": "$  9,186,440",
+            "visible": true,
+            "number_found": true
+          },
+          {
+            "doc_name": "BLOCK_2020_10K",
+            "pdf_page": 134,
+            "chunk_id": "BLOCK_2020_10K:p134:c1",
+            "label": "Commitments and contingencies for 2020",
+            "raw_number": "no data",
+            "visible": true,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [
+          1
+        ],
+        "missing_reference_operands": []
+      },
+      "gold_pdf_pages": [
+        [
+          "BLOCK_2020_10K",
+          90
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "381.603",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_07966",
+      "system": "B1",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "ACTIVISIONBLIZZARD_2019_10K",
+          70
+        ],
+        [
+          "ACTIVISIONBLIZZARD_2019_10K",
+          73
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "1.91440949",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_08135",
+      "system": "B1",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "AMAZON_2017_10K",
+          38
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "30.79632612",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_09724",
+      "system": "B1",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "COCACOLA_2021_10K",
+          62
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "39.72836632",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_10285",
+      "system": "B1",
+      "outcome": "correct",
+      "numeric_comparison": {
+        "predicted": "12645000000",
+        "predicted_unit": "USD",
+        "gold": "12645000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "0.00",
+        "allowed_absolute_error": "126450000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "BOEING_2018_10K",
+            "pdf_page": 85,
+            "chunk_id": "BOEING_2018_10K:p85:c1:1",
+            "label": "Property, plant and equipment at December 31, 2018",
+            "raw_number": "$12,645",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "12,645"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "BOEING_2018_10K",
+          52
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "12645",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_02608",
+      "system": "B2",
+      "outcome": "parse_error",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "BESTBUY_2017_10K",
+          56
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "2.81412893",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_02981",
+      "system": "B2",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "0.2",
+        "predicted_unit": "percentage_points",
+        "gold": "10.3",
+        "gold_unit": "percent",
+        "reason": "incompatible_units"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "CORNING_2021_10K",
+            "pdf_page": 65,
+            "chunk_id": "CORNING_2021_10K:p65:c1",
+            "label": "2019 unadjusted operating income",
+            "raw_number": "1,306",
+            "visible": true,
+            "number_found": true
+          },
+          {
+            "doc_name": "CORNING_2021_10K",
+            "pdf_page": 65,
+            "chunk_id": "CORNING_2021_10K:p65:c1",
+            "label": "2021 unadjusted operating income",
+            "raw_number": "2,112",
+            "visible": true,
+            "number_found": true
+          },
+          {
+            "doc_name": "CORNING_2021_10K",
+            "pdf_page": 65,
+            "chunk_id": "CORNING_2021_10K:p65:c1",
+            "label": "2020 unadjusted operating income",
+            "raw_number": "509",
+            "visible": true,
+            "number_found": true
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "pass",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "14,082",
+          "11,303",
+          "11,503"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "CORNING_2021_10K",
+          65
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "CORNING_2021_10K",
+          65
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "10.28488626",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_03069",
+      "system": "B2",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "61.33",
+        "predicted_unit": "percentage_points",
+        "gold": "4.2",
+        "gold_unit": "percent",
+        "reason": "incompatible_units"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "AMD_2015_10K",
+            "pdf_page": 60,
+            "chunk_id": "AMD_2015_10K:p60:c1",
+            "label": "Depreciation and amortization (D&A from cash flow statement) for AMD in 2015",
+            "raw_number": "$167",
+            "visible": true,
+            "number_found": true
+          },
+          {
+            "doc_name": "AMD_2015_10K",
+            "pdf_page": 43,
+            "chunk_id": "AMD_2015_10K:p43:c1",
+            "label": "Gross margin percentage for AMD in 2015",
+            "raw_number": "27%",
+            "visible": true,
+            "number_found": true
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "pass",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "3,991"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "AMD_2015_10K",
+          56
+        ],
+        [
+          "AMD_2015_10K",
+          60
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "AMD_2015_10K",
+          60
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "4.18441493",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_03282",
+      "system": "B2",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "21722504000000",
+        "predicted_unit": "USD",
+        "gold": "5466000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "21717038000000.00",
+        "allowed_absolute_error": "54660000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "NETFLIX_2017_10K",
+            "pdf_page": 45,
+            "chunk_id": "NETFLIX_2017_10K:p45:c1",
+            "label": "Total current liabilities",
+            "raw_number": "21,722,504",
+            "visible": true,
+            "number_found": false
+          },
+          {
+            "doc_name": "NETFLIX_2017_10K",
+            "pdf_page": 44,
+            "chunk_id": "NETFLIX_2017_10K:p44:c1",
+            "label": "Total current liabilities",
+            "raw_number": "21,722,504",
+            "visible": true,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "5,466,312"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "NETFLIX_2017_10K",
+          45
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "NETFLIX_2017_10K",
+          45
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "5466.312",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_03620",
+      "system": "B2",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "6534000000",
+        "predicted_unit": "USD",
+        "gold": "9068000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "2534000000.00",
+        "allowed_absolute_error": "90680000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "11,512",
+          "2,763",
+          "(5,207)"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "PEPSICO_2022_10K",
+          62
+        ],
+        [
+          "PEPSICO_2022_10K",
+          64
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "PEPSICO_2022_10K",
+          64
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "9068",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_03718",
+      "system": "B2",
+      "outcome": "parse_error",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "LOCKHEEDMARTIN_2022_10K",
+          63
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "0.44702677",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03838",
+      "system": "B2",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "99.05880320786785",
+        "predicted_unit": "percent",
+        "gold": "101.5",
+        "gold_unit": "percent",
+        "absolute_error": "2.44119679213215",
+        "allowed_absolute_error": "0.1"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "9,497,578",
+          "4,713,500"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "BLOCK_2020_10K",
+          86
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "101.49735865",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_03849",
+      "system": "B2",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "MGMRESORTS_2020_10K",
+          65
+        ],
+        [
+          "MGMRESORTS_2020_10K",
+          67
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "7.87014454",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03882",
+      "system": "B2",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "AMCOR_2020_10K",
+          50
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "1615.9",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04171",
+      "system": "B2",
+      "outcome": "parse_error",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "MGMRESORTS_2018_10K",
+          57
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "302.578",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04209",
+      "system": "B2",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "53007000000",
+        "predicted_unit": "USD",
+        "gold": "59268000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "6261000000.00",
+        "allowed_absolute_error": "592680000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "COSTCO_2021_10K",
+            "pdf_page": 38,
+            "chunk_id": "COSTCO_2021_10K:p38:c1",
+            "label": "Total current assets  $  29,505  $  28,120",
+            "raw_number": "$  29,505  $  28,120",
+            "visible": true,
+            "number_found": false
+          },
+          {
+            "doc_name": "COSTCO_2021_10K",
+            "pdf_page": 41,
+            "chunk_id": "COSTCO_2021_10K:p41:c1",
+            "label": "Property and equipment, net  23,492  21,807",
+            "raw_number": "Property and equipment, net  23,492  21,807",
+            "visible": true,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "59,268"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "COSTCO_2021_10K",
+          38
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "COSTCO_2021_10K",
+          38
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "59268",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_04254",
+      "system": "B2",
+      "outcome": "parse_error",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "AMERICANWATERWORKS_2021_10K",
+          86
+        ],
+        [
+          "AMERICANWATERWORKS_2021_10K",
+          88
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "AMERICANWATERWORKS_2021_10K",
+          86
+        ],
+        [
+          "AMERICANWATERWORKS_2021_10K",
+          88
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "1832",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04302",
+      "system": "B2",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "0.24",
+        "predicted_unit": "percentage_points",
+        "gold": "55.1",
+        "gold_unit": "percent",
+        "reason": "incompatible_units"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "NIKE_2018_10K",
+            "pdf_page": 24,
+            "chunk_id": "NIKE_2018_10K:p24:c1",
+            "label": "NIKE Brand cost of goods sold in fiscal 2018",
+            "raw_number": "$10,428 million",
+            "visible": true,
+            "number_found": false
+          },
+          {
+            "doc_name": "NIKE_2018_10K",
+            "pdf_page": 22,
+            "chunk_id": "NIKE_2018_10K:p22:c2",
+            "label": "NIKE Brand cost of goods sold in fiscal 2017",
+            "raw_number": "$9,082 million",
+            "visible": true,
+            "number_found": false
+          },
+          {
+            "doc_name": "NIKE_2018_10K",
+            "pdf_page": 24,
+            "chunk_id": "NIKE_2018_10K:p24:c1",
+            "label": "NIKE Brand revenue in fiscal 2018",
+            "raw_number": "$34,485 million",
+            "visible": true,
+            "number_found": false
+          },
+          {
+            "doc_name": "NIKE_2018_10K",
+            "pdf_page": 22,
+            "chunk_id": "NIKE_2018_10K:p22:c2",
+            "label": "NIKE Brand revenue in fiscal 2017",
+            "raw_number": "$32,233 million",
+            "visible": true,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "20,441",
+          "19,038",
+          "17,405",
+          "36,397",
+          "34,350",
+          "32,376"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "NIKE_2018_10K",
+          46
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "55.11458671",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_04417",
+      "system": "B2",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "52000000",
+        "predicted_unit": "USD",
+        "gold": "5409000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "5357000000.00",
+        "allowed_absolute_error": "54090000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "BESTBUY_2019_10K",
+            "pdf_page": 32,
+            "chunk_id": "BESTBUY_2019_10K:p32:c1",
+            "label": "Fiscal 2017 - Inventories at end of fiscal year",
+            "raw_number": "$26",
+            "visible": true,
+            "number_found": false
+          },
+          {
+            "doc_name": "BESTBUY_2019_10K",
+            "pdf_page": 32,
+            "chunk_id": "BESTBUY_2019_10K:p32:c1",
+            "label": "Fiscal 2018 - Inventories at end of fiscal year",
+            "raw_number": "$26",
+            "visible": true,
+            "number_found": false
+          },
+          {
+            "doc_name": "BESTBUY_2019_10K",
+            "pdf_page": 82,
+            "chunk_id": "BESTBUY_2019_10K:p82:c1",
+            "label": "Cumulative restructuring accrual activity - Facility closure and other costs",
+            "raw_number": "$52",
+            "visible": true,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "5,409"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "BESTBUY_2019_10K",
+          52
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "5409",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_04458",
+      "system": "B2",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "110.99",
+        "predicted_unit": "percent",
+        "gold": "5.4",
+        "gold_unit": "percent",
+        "absolute_error": "105.59",
+        "allowed_absolute_error": "0.1"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "305,826",
+          "62,283",
+          "6,779,511"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "NETFLIX_2015_10K",
+          40
+        ],
+        [
+          "NETFLIX_2015_10K",
+          42
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "NETFLIX_2015_10K",
+          40
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "5.4297279",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_04481",
+      "system": "B2",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "147.9910213243546400",
+        "predicted_unit": "percent",
+        "gold": "16.5",
+        "gold_unit": "percent",
+        "absolute_error": "131.4910213243546400",
+        "allowed_absolute_error": "0.1"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "PEPSICO_2022_10K",
+            "pdf_page": 103,
+            "chunk_id": "PEPSICO_2022_10K:p103:c1",
+            "label": "2022 unadjusted operating income",
+            "raw_number": "8,910",
+            "visible": true,
+            "number_found": true
+          },
+          {
+            "doc_name": "PEPSICO_2022_10K",
+            "pdf_page": 104,
+            "chunk_id": "PEPSICO_2022_10K:p104:c1",
+            "label": "2022 D&A",
+            "raw_number": "237",
+            "visible": true,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "11,512",
+          "2,763",
+          "86,392"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "PEPSICO_2022_10K",
+          62
+        ],
+        [
+          "PEPSICO_2022_10K",
+          64
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "16.5235207",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_04700",
+      "system": "B2",
+      "outcome": "parse_error",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "MICROSOFT_2016_10K",
+          52
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "32780",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04784",
+      "system": "B2",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "WALMART_2019_10K",
+          48
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "0.18382866",
+        "unit": "percentage_points",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04980",
+      "system": "B2",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "20210000.00",
+        "predicted_unit": "USD",
+        "gold": "4600000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "4579790000.00",
+        "allowed_absolute_error": "46000000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "PEPSICO_2021_10K",
+            "pdf_page": 65,
+            "chunk_id": "PEPSICO_2021_10K:p65:c1",
+            "label": "2021 Balance Sheet",
+            "raw_number": "$  22,407  $  1,538",
+            "visible": true,
+            "number_found": false
+          },
+          {
+            "doc_name": "PEPSICO_2021_10K",
+            "pdf_page": 66,
+            "chunk_id": "PEPSICO_2021_10K:p66:c1",
+            "label": "2021 Balance Sheet",
+            "raw_number": "$  21,369  $  1,703",
+            "visible": true,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "(4,625)"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "PEPSICO_2021_10K",
+          63
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "4.625",
+        "unit": "USD_billions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_05718",
+      "system": "B2",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "AMERICANWATERWORKS_2020_10K",
+          86
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "AMERICANWATERWORKS_2020_10K",
+          86
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "0.389",
+        "unit": "USD_billions",
+        "within_official_tolerance": false
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_06741",
+      "system": "B2",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "3.4",
+        "predicted_unit": "percent",
+        "gold": "6.2",
+        "gold_unit": "percent",
+        "absolute_error": "2.8",
+        "allowed_absolute_error": "0.1"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "WALMART_2020_10K",
+            "pdf_page": 38,
+            "chunk_id": "WALMART_2020_10K:p38:c1",
+            "label": "Walmart International Segment Operating income as a percentage of net sales",
+            "raw_number": "2.8%",
+            "visible": true,
+            "number_found": false
+          },
+          {
+            "doc_name": "WALMART_2020_10K",
+            "pdf_page": 30,
+            "chunk_id": "WALMART_2020_10K:p30:c1",
+            "label": "Walmart U.S. Operating income as a percentage of net sales",
+            "raw_number": "24.1%",
+            "visible": true,
+            "number_found": true
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "20,568",
+          "21,957",
+          "20,437",
+          "10,987",
+          "10,678",
+          "10,529",
+          "523,964",
+          "514,405",
+          "500,343"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "WALMART_2020_10K",
+          51
+        ],
+        [
+          "WALMART_2020_10K",
+          56
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "6.18517921",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_07661",
+      "system": "B2",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "381603000000",
+        "predicted_unit": "USD",
+        "gold": "382000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "381221000000.00",
+        "allowed_absolute_error": "3820000.0000"
+      },
+      "automatic_citation": {
+        "status": "pass",
+        "checks": [
+          {
+            "doc_name": "BLOCK_2020_10K",
+            "pdf_page": 90,
+            "chunk_id": "BLOCK_2020_10K:p90:c1",
+            "label": "Year Ended December 31, 2020 Cash flows from operating activities: Net income (loss) $ 213,105 $ 375,446 $ (38,453)",
+            "raw_number": "$ 381,603",
+            "visible": true,
+            "number_found": true
+          },
+          {
+            "doc_name": "BLOCK_2020_10K",
+            "pdf_page": 74,
+            "chunk_id": "BLOCK_2020_10K:p74:c2",
+            "label": "For the year ended December 31, 2019, cash provided by operating activities was $465.7 million primarily due to a net income of $375.4 million, adjusted for the add back of non-cash expenses of $574.5 million consisting primarily of share-based compensation, transaction and loan losses, depreciation and amortization, and non-cash interest and other expenses largely driven by growth and expansion of our business activities, offset in part by the gain on sale of Caviar of $373.4 million in the fourth quarter. The cash generated from operating activities was negatively affected by a net outflow from changes in other assets and liabilities of $110.8 million.",
+            "raw_number": "$ 465.7",
+            "visible": true,
+            "number_found": true
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "pass",
+        "matched_reference_paths": [
+          1
+        ],
+        "missing_reference_operands": []
+      },
+      "gold_pdf_pages": [
+        [
+          "BLOCK_2020_10K",
+          90
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "BLOCK_2020_10K",
+          90
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "381.603",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_07966",
+      "system": "B2",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "ACTIVISIONBLIZZARD_2019_10K",
+          70
+        ],
+        [
+          "ACTIVISIONBLIZZARD_2019_10K",
+          73
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "1.91440949",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_08135",
+      "system": "B2",
+      "outcome": "parse_error",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "AMAZON_2017_10K",
+          38
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "30.79632612",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_09724",
+      "system": "B2",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "139.72836631742337",
+        "predicted_unit": "percent",
+        "gold": "39.7",
+        "gold_unit": "percent",
+        "absolute_error": "100.02836631742337",
+        "allowed_absolute_error": "0.1"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "COCACOLA_2021_10K",
+            "pdf_page": 62,
+            "chunk_id": "COCACOLA_2021_10K:p62:c1",
+            "label": "Cost of goods sold 15,357 38,655",
+            "raw_number": "Cost of goods sold 15,357 38,655",
+            "visible": true,
+            "number_found": false
+          },
+          {
+            "doc_name": "COCACOLA_2021_10K",
+            "pdf_page": 108,
+            "chunk_id": "COCACOLA_2021_10K:p108:c1",
+            "label": "In 2020, the Company recognized a net increase of $103 million in its valuation allowances. The increase was primarily due to net increases in the deferred tax assets and related valuation allowances on certain equity investments.",
+            "raw_number": "In 2020, the Company recognized a net increase of $103 million in its valuation allowances. The increase was primarily due to net increases in the deferred tax assets and related valuation allowances on certain equity investments.",
+            "visible": true,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "15,357",
+          "38,655"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "COCACOLA_2021_10K",
+          62
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "COCACOLA_2021_10K",
+          62
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "39.72836632",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_10285",
+      "system": "B2",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "4850000000",
+        "predicted_unit": "USD",
+        "gold": "12645000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "7795000000.00",
+        "allowed_absolute_error": "126450000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "The Boeing Company and Subsidiaries Consolidated Statements of Financial Position",
+            "pdf_page": 52,
+            "chunk_id": "BOEING_2018_10K:p52:c1",
+            "label": "Property, plant and equipment, net 12,645 12,672",
+            "raw_number": "$12,645",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "The Boeing Company and Subsidiaries Consolidated Statements of Financial Position",
+            "pdf_page": 52,
+            "chunk_id": "BOEING_2018_10K:p52:c1",
+            "label": "Goodwill 7,840 5,559",
+            "raw_number": "$7,840",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "12,645"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "BOEING_2018_10K",
+          52
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "BOEING_2018_10K",
+          52
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "12645",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_02608",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "BESTBUY_2017_10K",
+          56
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "BESTBUY_2017_10K",
+          56
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "2.81412893",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_02981",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "CORNING_2021_10K",
+          65
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "CORNING_2021_10K",
+          65
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "10.28488626",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03069",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "AMD_2015_10K",
+          56
+        ],
+        [
+          "AMD_2015_10K",
+          60
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "AMD_2015_10K",
+          60
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "4.18441493",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03282",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "NETFLIX_2017_10K",
+          45
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "NETFLIX_2017_10K",
+          45
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "5466.312",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03620",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "PEPSICO_2022_10K",
+          62
+        ],
+        [
+          "PEPSICO_2022_10K",
+          64
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "9068",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03718",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "LOCKHEEDMARTIN_2022_10K",
+          63
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "0.44702677",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03838",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "BLOCK_2020_10K",
+          86
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "BLOCK_2020_10K",
+          86
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "101.49735865",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03849",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "MGMRESORTS_2020_10K",
+          65
+        ],
+        [
+          "MGMRESORTS_2020_10K",
+          67
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "MGMRESORTS_2020_10K",
+          65
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "7.87014454",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03882",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "AMCOR_2020_10K",
+          50
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "AMCOR_2020_10K",
+          50
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "1615.9",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04171",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "MGMRESORTS_2018_10K",
+          57
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "MGMRESORTS_2018_10K",
+          57
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "302.578",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04209",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "COSTCO_2021_10K",
+          38
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "COSTCO_2021_10K",
+          38
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "59268",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04254",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "AMERICANWATERWORKS_2021_10K",
+          86
+        ],
+        [
+          "AMERICANWATERWORKS_2021_10K",
+          88
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "AMERICANWATERWORKS_2021_10K",
+          86
+        ],
+        [
+          "AMERICANWATERWORKS_2021_10K",
+          88
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "1832",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04302",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "NIKE_2018_10K",
+          46
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "55.11458671",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04417",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "BESTBUY_2019_10K",
+          52
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "5409",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04458",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "NETFLIX_2015_10K",
+          40
+        ],
+        [
+          "NETFLIX_2015_10K",
+          42
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "5.4297279",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04481",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "PEPSICO_2022_10K",
+          62
+        ],
+        [
+          "PEPSICO_2022_10K",
+          64
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "16.5235207",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04700",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "MICROSOFT_2016_10K",
+          52
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "32780",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04784",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "WALMART_2019_10K",
+          48
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "0.18382866",
+        "unit": "percentage_points",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04980",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "PEPSICO_2021_10K",
+          63
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "PEPSICO_2021_10K",
+          63
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "4.625",
+        "unit": "USD_billions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_05718",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "AMERICANWATERWORKS_2020_10K",
+          86
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "AMERICANWATERWORKS_2020_10K",
+          86
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "0.389",
+        "unit": "USD_billions",
+        "within_official_tolerance": false
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_06741",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "WALMART_2020_10K",
+          51
+        ],
+        [
+          "WALMART_2020_10K",
+          56
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "6.18517921",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_07661",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "BLOCK_2020_10K",
+          90
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "BLOCK_2020_10K",
+          90
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "381.603",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_07966",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "ACTIVISIONBLIZZARD_2019_10K",
+          70
+        ],
+        [
+          "ACTIVISIONBLIZZARD_2019_10K",
+          73
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "ACTIVISIONBLIZZARD_2019_10K",
+          70
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "1.91440949",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_08135",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "AMAZON_2017_10K",
+          38
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "30.79632612",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_09724",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "COCACOLA_2021_10K",
+          62
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "39.72836632",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_10285",
+      "system": "Ours",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "BOEING_2018_10K",
+          52
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "BOEING_2018_10K",
+          52
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "12645",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_02608",
+      "system": "NoVerifier",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "BESTBUY_2017_10K",
+          56
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "BESTBUY_2017_10K",
+          56
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "2.81412893",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_02981",
+      "system": "NoVerifier",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "CORNING_2021_10K",
+          65
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "CORNING_2021_10K",
+          65
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "10.28488626",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03069",
+      "system": "NoVerifier",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "AMD_2015_10K",
+          56
+        ],
+        [
+          "AMD_2015_10K",
+          60
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "AMD_2015_10K",
+          60
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "4.18441493",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03282",
+      "system": "NoVerifier",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "8796108.000000",
+        "predicted_unit": "USD",
+        "gold": "5466000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "5457203892.000000",
+        "allowed_absolute_error": "54660000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "label": "NETFLIX_2017_10K:p45:c1",
+            "raw_number": "5,466,312",
+            "chunk_id": "Current liabilities",
+            "pdf_page": 45,
+            "doc_name": "NETFLIX_2017_10K",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "label": "NETFLIX_2017_10K:p54:c1",
+            "raw_number": "3,329,796",
+            "chunk_id": "Non-current content liabilities",
+            "pdf_page": 54,
+            "doc_name": "NETFLIX_2017_10K",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "5,466,312"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "NETFLIX_2017_10K",
+          45
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "NETFLIX_2017_10K",
+          45
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "5466.312",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_03620",
+      "system": "NoVerifier",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "PEPSICO_2022_10K",
+          62
+        ],
+        [
+          "PEPSICO_2022_10K",
+          64
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "9068",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03718",
+      "system": "NoVerifier",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "39.1",
+        "predicted_unit": "percent",
+        "gold": "0.4",
+        "gold_unit": "percent",
+        "absolute_error": "38.7",
+        "allowed_absolute_error": "0.1"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "label": "Lockheed Martin's total revenue in FY2022",
+            "raw_number": "8715",
+            "chunk_id": "Total revenue",
+            "pdf_page": 64,
+            "doc_name": "LOCKHEEDMARTIN_2022_10K",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "label": "Lockheed Martin's total revenue in FY2020",
+            "raw_number": "6266",
+            "chunk_id": "Total revenue",
+            "pdf_page": 64,
+            "doc_name": "LOCKHEEDMARTIN_2022_10K",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "65,984",
+          "65,398"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "LOCKHEEDMARTIN_2022_10K",
+          63
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "0.44702677",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_03838",
+      "system": "NoVerifier",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "BLOCK_2020_10K",
+          86
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "BLOCK_2020_10K",
+          86
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "101.49735865",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03849",
+      "system": "NoVerifier",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "MGMRESORTS_2020_10K",
+          65
+        ],
+        [
+          "MGMRESORTS_2020_10K",
+          67
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "MGMRESORTS_2020_10K",
+          65
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "7.87014454",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03882",
+      "system": "NoVerifier",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "AMCOR_2020_10K",
+          50
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "AMCOR_2020_10K",
+          50
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "1615.9",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04171",
+      "system": "NoVerifier",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "MGMRESORTS_2018_10K",
+          57
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "MGMRESORTS_2018_10K",
+          57
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "302.578",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04209",
+      "system": "NoVerifier",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "88773.000000",
+        "predicted_unit": "USD",
+        "gold": "59268000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "59267911227.000000",
+        "allowed_absolute_error": "592680000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "label": "[COSTCO_2021_10K:p38:c1 | PDF page 38] Total current assets",
+            "raw_number": "29505",
+            "chunk_id": "Total current assets",
+            "pdf_page": 38,
+            "doc_name": "COSTCO_2021_10K",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "label": "[COSTCO_2021_10K:p38:c1 | PDF page 38] Total other assets",
+            "raw_number": "59268",
+            "chunk_id": "Total other assets",
+            "pdf_page": 38,
+            "doc_name": "COSTCO_2021_10K",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "59,268"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "COSTCO_2021_10K",
+          38
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "COSTCO_2021_10K",
+          38
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "59268",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_04254",
+      "system": "NoVerifier",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "1899.000000",
+        "predicted_unit": "USD",
+        "gold": "1832000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "1831998101.000000",
+        "allowed_absolute_error": "18320000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "label": "Operating income",
+            "raw_number": "1263",
+            "chunk_id": "Operating income",
+            "pdf_page": 86,
+            "doc_name": "AMERICANWATERWORKS_2021_10K",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "label": "Depreciation and amortization",
+            "raw_number": "636",
+            "chunk_id": "Depreciation and amortization",
+            "pdf_page": 88,
+            "doc_name": "AMERICANWATERWORKS_2021_10K",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "1,196",
+          "636"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "AMERICANWATERWORKS_2021_10K",
+          86
+        ],
+        [
+          "AMERICANWATERWORKS_2021_10K",
+          88
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "AMERICANWATERWORKS_2021_10K",
+          86
+        ],
+        [
+          "AMERICANWATERWORKS_2021_10K",
+          88
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "1832",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_04302",
+      "system": "NoVerifier",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "0",
+        "predicted_unit": "percent",
+        "gold": "55.1",
+        "gold_unit": "percent",
+        "absolute_error": "55.1",
+        "allowed_absolute_error": "0.1"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "label": "NIKE Brand cost of goods sold",
+            "raw_number": "100",
+            "chunk_id": "NIKE Brand cost of goods sold",
+            "pdf_page": 25,
+            "doc_name": "NIKE_2018_10K",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "label": "NIKE Brand cost of goods sold",
+            "raw_number": "100",
+            "chunk_id": "NIKE Brand cost of goods sold",
+            "pdf_page": 25,
+            "doc_name": "NIKE_2018_10K",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "20,441",
+          "19,038",
+          "17,405",
+          "36,397",
+          "34,350",
+          "32,376"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "NIKE_2018_10K",
+          46
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "55.11458671",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_04417",
+      "system": "NoVerifier",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "3019.000000",
+        "predicted_unit": "USD",
+        "gold": "5409000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "5408996981.000000",
+        "allowed_absolute_error": "54090000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "label": "Inventories",
+            "raw_number": "1,000",
+            "chunk_id": "Inventories",
+            "pdf_page": 82,
+            "doc_name": "BESTBUY_2019_10K",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "label": "Fiscal Year",
+            "raw_number": "2019",
+            "chunk_id": "Fiscal Year",
+            "pdf_page": 82,
+            "doc_name": "BESTBUY_2019_10K",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "5,409"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "BESTBUY_2019_10K",
+          52
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "5409",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_04458",
+      "system": "NoVerifier",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "NETFLIX_2015_10K",
+          40
+        ],
+        [
+          "NETFLIX_2015_10K",
+          42
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "5.4297279",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04481",
+      "system": "NoVerifier",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "PEPSICO_2022_10K",
+          62
+        ],
+        [
+          "PEPSICO_2022_10K",
+          64
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "16.5235207",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04700",
+      "system": "NoVerifier",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "11351.000000",
+        "predicted_unit": "USD",
+        "gold": "32780000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "32779988649.000000",
+        "allowed_absolute_error": "327800000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "label": "COGS",
+            "raw_number": "12,461",
+            "chunk_id": "Productivity and Business Processes",
+            "pdf_page": 94,
+            "doc_name": "MICROSOFT_2016_10K",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "label": "COGS",
+            "raw_number": "-1,110",
+            "chunk_id": "Impairment, integration and restructuring expenses",
+            "pdf_page": 94,
+            "doc_name": "MICROSOFT_2016_10K",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "32,780"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "MICROSOFT_2016_10K",
+          52
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "32780",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_04784",
+      "system": "NoVerifier",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "WALMART_2019_10K",
+          48
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "0.18382866",
+        "unit": "percentage_points",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04980",
+      "system": "NoVerifier",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "-4625.000000000",
+        "predicted_unit": "USD",
+        "gold": "4600000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "4600004625.000000000",
+        "allowed_absolute_error": "46000000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "label": "Capital spending",
+            "raw_number": "-4,625",
+            "chunk_id": "Capital spending",
+            "pdf_page": 63,
+            "doc_name": "PEPSICO_2021_10K",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "label": "USD billions",
+            "raw_number": "1",
+            "chunk_id": "USD billions",
+            "pdf_page": 63,
+            "doc_name": "PEPSICO_2021_10K",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "(4,625)"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "PEPSICO_2021_10K",
+          63
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "PEPSICO_2021_10K",
+          63
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "4.625",
+        "unit": "USD_billions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_05718",
+      "system": "NoVerifier",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "AMERICANWATERWORKS_2020_10K",
+          86
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "AMERICANWATERWORKS_2020_10K",
+          86
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "0.389",
+        "unit": "USD_billions",
+        "within_official_tolerance": false
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_06741",
+      "system": "NoVerifier",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "-35.6",
+        "predicted_unit": "percent",
+        "gold": "6.2",
+        "gold_unit": "percent",
+        "absolute_error": "41.8",
+        "allowed_absolute_error": "0.1"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "label": "Walmart International Segment: Operating income",
+            "raw_number": "3370",
+            "chunk_id": "Walmart International Segment: Operating income",
+            "pdf_page": 38,
+            "doc_name": "WALMART_2020_10K",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "label": "Walmart International Segment: Operating income",
+            "raw_number": "5229",
+            "chunk_id": "Walmart International Segment: Operating income",
+            "pdf_page": 38,
+            "doc_name": "WALMART_2020_10K",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "20,568",
+          "21,957",
+          "20,437",
+          "10,987",
+          "10,678",
+          "10,529",
+          "523,964",
+          "514,405",
+          "500,343"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "WALMART_2020_10K",
+          51
+        ],
+        [
+          "WALMART_2020_10K",
+          56
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "6.18517921",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_07661",
+      "system": "NoVerifier",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "297317.000000",
+        "predicted_unit": "USD",
+        "gold": "382000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "381702683.000000",
+        "allowed_absolute_error": "3820000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "label": "Net income (loss)",
+            "raw_number": "213105",
+            "chunk_id": "Net income (loss)",
+            "pdf_page": 90,
+            "doc_name": "BLOCK_2020_10K",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "label": "Adjustments to reconcile net loss to net cash provided by operating activities",
+            "raw_number": "84212",
+            "chunk_id": "Adjustments to reconcile net loss to net cash provided by operating activities",
+            "pdf_page": 90,
+            "doc_name": "BLOCK_2020_10K",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "381,603"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "BLOCK_2020_10K",
+          90
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "BLOCK_2020_10K",
+          90
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "381.603",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_07966",
+      "system": "NoVerifier",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "0",
+        "predicted_unit": "percent",
+        "gold": "1.9",
+        "gold_unit": "percent",
+        "absolute_error": "1.9",
+        "allowed_absolute_error": "0.1"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "label": "ACTIVISIONBLIZZARD_2019_10K:p70:c1",
+            "raw_number": "-1.0",
+            "chunk_id": "3",
+            "pdf_page": 70,
+            "doc_name": "ACTIVISIONBLIZZARD_2019_10K",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "label": "ACTIVISIONBLIZZARD_2018_10K:p70:c1",
+            "raw_number": "-1.0",
+            "chunk_id": "3",
+            "pdf_page": 70,
+            "doc_name": "ACTIVISIONBLIZZARD_2019_10K",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "(116)",
+          "(131)",
+          "(155)",
+          "6,489",
+          "7,500",
+          "7,017"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "ACTIVISIONBLIZZARD_2019_10K",
+          70
+        ],
+        [
+          "ACTIVISIONBLIZZARD_2019_10K",
+          73
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "ACTIVISIONBLIZZARD_2019_10K",
+          70
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "1.91440949",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_08135",
+      "system": "NoVerifier",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "AMAZON_2017_10K",
+          38
+        ]
+      ],
+      "gold_page_hits": [],
+      "reference_recalculation": {
+        "value": "30.79632612",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_09724",
+      "system": "NoVerifier",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "COCACOLA_2021_10K",
+          62
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "COCACOLA_2021_10K",
+          62
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "39.72836632",
+        "unit": "percent",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_10285",
+      "system": "NoVerifier",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "1264500.0000",
+        "predicted_unit": "USD",
+        "gold": "12645000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "12643735500.0000",
+        "allowed_absolute_error": "126450000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "label": "Property, plant and equipment, net",
+            "raw_number": "12645",
+            "chunk_id": "Property, plant and equipment, net",
+            "pdf_page": 52,
+            "doc_name": "BOEING_2018_10K",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "label": "100",
+            "raw_number": "100",
+            "chunk_id": "100",
+            "pdf_page": 52,
+            "doc_name": "BOEING_2018_10K",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "reference_annotation_status": "verified",
+        "literal_status": "fail",
+        "matched_reference_paths": [],
+        "missing_reference_operands": [
+          "12,645"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "BOEING_2018_10K",
+          52
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "BOEING_2018_10K",
+          52
+        ]
+      ],
+      "reference_recalculation": {
+        "value": "12645",
+        "unit": "USD_millions",
+        "within_official_tolerance": true
+      },
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    }
+  ]
+}

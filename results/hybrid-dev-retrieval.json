@@ -1,0 +1,593 @@
+{
+  "scope": "dev",
+  "query": "original question verbatim",
+  "top_k": 2,
+  "summary": {
+    "bm25": {
+      "questions": 7,
+      "any_gold_page_at_2": 1,
+      "mrr_at_2": 0.14285714285714285
+    },
+    "hybrid": {
+      "questions": 7,
+      "any_gold_page_at_2": 4,
+      "mrr_at_2": 0.5714285714285714
+    }
+  },
+  "rows": [
+    {
+      "question_id": "financebench_id_03031",
+      "method": "bm25",
+      "doc_name": "LOCKHEEDMARTIN_2021_10K",
+      "hits": [
+        {
+          "chunk_id": "LOCKHEEDMARTIN_2021_10K:p68:c1",
+          "doc_name": "LOCKHEEDMARTIN_2021_10K",
+          "company": "Lockheed Martin",
+          "fiscal_year": 2021,
+          "page_index": 67,
+          "pdf_page": 68,
+          "score": 44.57135589330069
+        },
+        {
+          "chunk_id": "LOCKHEEDMARTIN_2021_10K:p78:c1",
+          "doc_name": "LOCKHEEDMARTIN_2021_10K",
+          "company": "Lockheed Martin",
+          "fiscal_year": 2021,
+          "page_index": 77,
+          "pdf_page": 78,
+          "score": 37.557750983904064
+        }
+      ],
+      "reference_pages": [
+        [
+          "LOCKHEEDMARTIN_2021_10K",
+          68
+        ]
+      ],
+      "first_matching_rank": 1
+    },
+    {
+      "question_id": "financebench_id_03031",
+      "method": "hybrid",
+      "doc_name": "LOCKHEEDMARTIN_2021_10K",
+      "hits": [
+        {
+          "chunk_id": "LOCKHEEDMARTIN_2021_10K:p68:c1",
+          "doc_name": "LOCKHEEDMARTIN_2021_10K",
+          "company": "Lockheed Martin",
+          "fiscal_year": 2021,
+          "page_index": 67,
+          "pdf_page": 68,
+          "bm25_rank": 1,
+          "bm25_score": 44.57135589330069,
+          "dense_rank": 1,
+          "dense_score": 0.6163110733032227,
+          "rrf_score": 0.03278688524590164,
+          "rrf_rank": 1,
+          "rerank_score": 1.317676305770874,
+          "score": 1.317676305770874,
+          "rank": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "chunk_id": "LOCKHEEDMARTIN_2021_10K:p77:c1",
+          "doc_name": "LOCKHEEDMARTIN_2021_10K",
+          "company": "Lockheed Martin",
+          "fiscal_year": 2021,
+          "page_index": 76,
+          "pdf_page": 77,
+          "bm25_rank": 12,
+          "bm25_score": 19.68398377088471,
+          "dense_rank": 7,
+          "dense_score": 0.4880128502845764,
+          "rrf_score": 0.028814262023217248,
+          "rrf_rank": 3,
+          "rerank_score": -0.18414238095283508,
+          "score": -0.18414238095283508,
+          "rank": 2,
+          "retrieval_method": "hybrid"
+        }
+      ],
+      "reference_pages": [
+        [
+          "LOCKHEEDMARTIN_2021_10K",
+          68
+        ]
+      ],
+      "first_matching_rank": 1
+    },
+    {
+      "question_id": "financebench_id_03029",
+      "method": "bm25",
+      "doc_name": "3M_2018_10K",
+      "hits": [
+        {
+          "chunk_id": "3M_2018_10K:p49:c1",
+          "doc_name": "3M_2018_10K",
+          "company": "3M",
+          "fiscal_year": 2018,
+          "page_index": 48,
+          "pdf_page": 49,
+          "score": 20.9353887297366
+        },
+        {
+          "chunk_id": "3M_2018_10K:p83:c1",
+          "doc_name": "3M_2018_10K",
+          "company": "3M",
+          "fiscal_year": 2018,
+          "page_index": 82,
+          "pdf_page": 83,
+          "score": 20.734633055530207
+        }
+      ],
+      "reference_pages": [
+        [
+          "3M_2018_10K",
+          60
+        ]
+      ],
+      "first_matching_rank": null
+    },
+    {
+      "question_id": "financebench_id_03029",
+      "method": "hybrid",
+      "doc_name": "3M_2018_10K",
+      "hits": [
+        {
+          "chunk_id": "3M_2018_10K:p43:c1",
+          "doc_name": "3M_2018_10K",
+          "company": "3M",
+          "fiscal_year": 2018,
+          "page_index": 42,
+          "pdf_page": 43,
+          "bm25_rank": 3,
+          "bm25_score": 16.965931503375444,
+          "dense_rank": 6,
+          "dense_score": 0.552168607711792,
+          "rrf_score": 0.031024531024531024,
+          "rrf_rank": 1,
+          "rerank_score": -1.3573565483093262,
+          "score": -1.3573565483093262,
+          "rank": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "chunk_id": "3M_2018_10K:p44:c1",
+          "doc_name": "3M_2018_10K",
+          "company": "3M",
+          "fiscal_year": 2018,
+          "page_index": 43,
+          "pdf_page": 44,
+          "bm25_rank": 18,
+          "bm25_score": 12.265599499566513,
+          "dense_rank": 13,
+          "dense_score": 0.5195279121398926,
+          "rrf_score": 0.02651914295749912,
+          "rrf_rank": 7,
+          "rerank_score": -2.2827112674713135,
+          "score": -2.2827112674713135,
+          "rank": 2,
+          "retrieval_method": "hybrid"
+        }
+      ],
+      "reference_pages": [
+        [
+          "3M_2018_10K",
+          60
+        ]
+      ],
+      "first_matching_rank": null
+    },
+    {
+      "question_id": "financebench_id_04672",
+      "method": "bm25",
+      "doc_name": "3M_2018_10K",
+      "hits": [
+        {
+          "chunk_id": "3M_2018_10K:p99:c1",
+          "doc_name": "3M_2018_10K",
+          "company": "3M",
+          "fiscal_year": 2018,
+          "page_index": 98,
+          "pdf_page": 99,
+          "score": 26.644094862654537
+        },
+        {
+          "chunk_id": "3M_2018_10K:p105:c1",
+          "doc_name": "3M_2018_10K",
+          "company": "3M",
+          "fiscal_year": 2018,
+          "page_index": 104,
+          "pdf_page": 105,
+          "score": 18.424660187834675
+        }
+      ],
+      "reference_pages": [
+        [
+          "3M_2018_10K",
+          58
+        ]
+      ],
+      "first_matching_rank": null
+    },
+    {
+      "question_id": "financebench_id_04672",
+      "method": "hybrid",
+      "doc_name": "3M_2018_10K",
+      "hits": [
+        {
+          "chunk_id": "3M_2018_10K:p99:c1",
+          "doc_name": "3M_2018_10K",
+          "company": "3M",
+          "fiscal_year": 2018,
+          "page_index": 98,
+          "pdf_page": 99,
+          "bm25_rank": 1,
+          "bm25_score": 26.644094862654537,
+          "dense_rank": 14,
+          "dense_score": 0.46761152148246765,
+          "rrf_score": 0.029906956136464335,
+          "rrf_rank": 1,
+          "rerank_score": -1.057754397392273,
+          "score": -1.057754397392273,
+          "rank": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "chunk_id": "3M_2018_10K:p106:c1",
+          "doc_name": "3M_2018_10K",
+          "company": "3M",
+          "fiscal_year": 2018,
+          "page_index": 105,
+          "pdf_page": 106,
+          "bm25_rank": 6,
+          "bm25_score": 15.336606011518672,
+          "dense_rank": 12,
+          "dense_score": 0.4880961775779724,
+          "rrf_score": 0.02904040404040404,
+          "rrf_rank": 3,
+          "rerank_score": -7.522565841674805,
+          "score": -7.522565841674805,
+          "rank": 2,
+          "retrieval_method": "hybrid"
+        }
+      ],
+      "reference_pages": [
+        [
+          "3M_2018_10K",
+          58
+        ]
+      ],
+      "first_matching_rank": null
+    },
+    {
+      "question_id": "financebench_id_07507",
+      "method": "bm25",
+      "doc_name": "ADOBE_2016_10K",
+      "hits": [
+        {
+          "chunk_id": "ADOBE_2016_10K:p41:c2",
+          "doc_name": "ADOBE_2016_10K",
+          "company": "Adobe",
+          "fiscal_year": 2016,
+          "page_index": 40,
+          "pdf_page": 41,
+          "score": 22.35235706075416
+        },
+        {
+          "chunk_id": "ADOBE_2016_10K:p73:c1",
+          "doc_name": "ADOBE_2016_10K",
+          "company": "Adobe",
+          "fiscal_year": 2016,
+          "page_index": 72,
+          "pdf_page": 73,
+          "score": 19.324034545448125
+        }
+      ],
+      "reference_pages": [
+        [
+          "ADOBE_2016_10K",
+          62
+        ]
+      ],
+      "first_matching_rank": null
+    },
+    {
+      "question_id": "financebench_id_07507",
+      "method": "hybrid",
+      "doc_name": "ADOBE_2016_10K",
+      "hits": [
+        {
+          "chunk_id": "ADOBE_2016_10K:p62:c1",
+          "doc_name": "ADOBE_2016_10K",
+          "company": "Adobe",
+          "fiscal_year": 2016,
+          "page_index": 61,
+          "pdf_page": 62,
+          "bm25_rank": 14,
+          "bm25_score": 12.941397426816366,
+          "dense_rank": 5,
+          "dense_score": 0.5432115793228149,
+          "rrf_score": 0.0288981288981289,
+          "rrf_rank": 3,
+          "rerank_score": -2.795701265335083,
+          "score": -2.795701265335083,
+          "rank": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "chunk_id": "ADOBE_2016_10K:p52:c1",
+          "doc_name": "ADOBE_2016_10K",
+          "company": "Adobe",
+          "fiscal_year": 2016,
+          "page_index": 51,
+          "pdf_page": 52,
+          "bm25_rank": 3,
+          "bm25_score": 16.69096012930021,
+          "dense_rank": 11,
+          "dense_score": 0.5180277824401855,
+          "rrf_score": 0.029957522915269395,
+          "rrf_rank": 1,
+          "rerank_score": -4.672702312469482,
+          "score": -4.672702312469482,
+          "rank": 2,
+          "retrieval_method": "hybrid"
+        }
+      ],
+      "reference_pages": [
+        [
+          "ADOBE_2016_10K",
+          62
+        ]
+      ],
+      "first_matching_rank": 1
+    },
+    {
+      "question_id": "financebench_id_04854",
+      "method": "bm25",
+      "doc_name": "GENERALMILLS_2020_10K",
+      "hits": [
+        {
+          "chunk_id": "GENERALMILLS_2020_10K:p37:c1",
+          "doc_name": "GENERALMILLS_2020_10K",
+          "company": "General Mills",
+          "fiscal_year": 2020,
+          "page_index": 36,
+          "pdf_page": 37,
+          "score": 24.561055204773226
+        },
+        {
+          "chunk_id": "GENERALMILLS_2020_10K:p95:c2",
+          "doc_name": "GENERALMILLS_2020_10K",
+          "company": "General Mills",
+          "fiscal_year": 2020,
+          "page_index": 94,
+          "pdf_page": 95,
+          "score": 23.669619509000196
+        }
+      ],
+      "reference_pages": [
+        [
+          "GENERALMILLS_2020_10K",
+          52
+        ]
+      ],
+      "first_matching_rank": null
+    },
+    {
+      "question_id": "financebench_id_04854",
+      "method": "hybrid",
+      "doc_name": "GENERALMILLS_2020_10K",
+      "hits": [
+        {
+          "chunk_id": "GENERALMILLS_2020_10K:p52:c1",
+          "doc_name": "GENERALMILLS_2020_10K",
+          "company": "General Mills",
+          "fiscal_year": 2020,
+          "page_index": 51,
+          "pdf_page": 52,
+          "bm25_rank": 7,
+          "bm25_score": 18.021527628822575,
+          "dense_rank": 4,
+          "dense_score": 0.38565367460250854,
+          "rrf_score": 0.03055037313432836,
+          "rrf_rank": 3,
+          "rerank_score": 1.6206613779067993,
+          "score": 1.6206613779067993,
+          "rank": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "chunk_id": "GENERALMILLS_2020_10K:p46:c1",
+          "doc_name": "GENERALMILLS_2020_10K",
+          "company": "General Mills",
+          "fiscal_year": 2020,
+          "page_index": 45,
+          "pdf_page": 46,
+          "bm25_rank": 5,
+          "bm25_score": 19.231229135798486,
+          "dense_rank": 8,
+          "dense_score": 0.3628714382648468,
+          "rrf_score": 0.030090497737556562,
+          "rrf_rank": 5,
+          "rerank_score": -0.5627762079238892,
+          "score": -0.5627762079238892,
+          "rank": 2,
+          "retrieval_method": "hybrid"
+        }
+      ],
+      "reference_pages": [
+        [
+          "GENERALMILLS_2020_10K",
+          52
+        ]
+      ],
+      "first_matching_rank": 1
+    },
+    {
+      "question_id": "financebench_id_08286",
+      "method": "bm25",
+      "doc_name": "AMAZON_2019_10K",
+      "hits": [
+        {
+          "chunk_id": "AMAZON_2019_10K:p73:c1",
+          "doc_name": "AMAZON_2019_10K",
+          "company": "Amazon",
+          "fiscal_year": 2019,
+          "page_index": 72,
+          "pdf_page": 73,
+          "score": 15.235497479859838
+        },
+        {
+          "chunk_id": "AMAZON_2019_10K:p39:c1",
+          "doc_name": "AMAZON_2019_10K",
+          "company": "Amazon",
+          "fiscal_year": 2019,
+          "page_index": 38,
+          "pdf_page": 39,
+          "score": 14.167208937878282
+        }
+      ],
+      "reference_pages": [
+        [
+          "AMAZON_2019_10K",
+          38
+        ]
+      ],
+      "first_matching_rank": null
+    },
+    {
+      "question_id": "financebench_id_08286",
+      "method": "hybrid",
+      "doc_name": "AMAZON_2019_10K",
+      "hits": [
+        {
+          "chunk_id": "AMAZON_2019_10K:p39:c1",
+          "doc_name": "AMAZON_2019_10K",
+          "company": "Amazon",
+          "fiscal_year": 2019,
+          "page_index": 38,
+          "pdf_page": 39,
+          "bm25_rank": 2,
+          "bm25_score": 14.167208937878282,
+          "dense_rank": 9,
+          "dense_score": 0.6018681526184082,
+          "rrf_score": 0.030621785881252923,
+          "rrf_rank": 2,
+          "rerank_score": -1.1675634384155273,
+          "score": -1.1675634384155273,
+          "rank": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "chunk_id": "AMAZON_2019_10K:p37:c1",
+          "doc_name": "AMAZON_2019_10K",
+          "company": "Amazon",
+          "fiscal_year": 2019,
+          "page_index": 36,
+          "pdf_page": 37,
+          "bm25_rank": 13,
+          "bm25_score": 9.579008670963216,
+          "dense_rank": 1,
+          "dense_score": 0.7417995929718018,
+          "rrf_score": 0.03009207275993712,
+          "rrf_rank": 3,
+          "rerank_score": -1.3148707151412964,
+          "score": -1.3148707151412964,
+          "rank": 2,
+          "retrieval_method": "hybrid"
+        }
+      ],
+      "reference_pages": [
+        [
+          "AMAZON_2019_10K",
+          38
+        ]
+      ],
+      "first_matching_rank": null
+    },
+    {
+      "question_id": "financebench_id_03531",
+      "method": "bm25",
+      "doc_name": "NIKE_2019_10K",
+      "hits": [
+        {
+          "chunk_id": "NIKE_2019_10K:p64:c1",
+          "doc_name": "NIKE_2019_10K",
+          "company": "Nike",
+          "fiscal_year": 2019,
+          "page_index": 63,
+          "pdf_page": 64,
+          "score": 24.522167501781176
+        },
+        {
+          "chunk_id": "NIKE_2019_10K:p77:c1",
+          "doc_name": "NIKE_2019_10K",
+          "company": "Nike",
+          "fiscal_year": 2019,
+          "page_index": 76,
+          "pdf_page": 77,
+          "score": 24.426790691038885
+        }
+      ],
+      "reference_pages": [
+        [
+          "NIKE_2019_10K",
+          54
+        ]
+      ],
+      "first_matching_rank": null
+    },
+    {
+      "question_id": "financebench_id_03531",
+      "method": "hybrid",
+      "doc_name": "NIKE_2019_10K",
+      "hits": [
+        {
+          "chunk_id": "NIKE_2019_10K:p54:c1",
+          "doc_name": "NIKE_2019_10K",
+          "company": "Nike",
+          "fiscal_year": 2019,
+          "page_index": 53,
+          "pdf_page": 54,
+          "bm25_rank": 3,
+          "bm25_score": 21.907922817645215,
+          "dense_rank": 7,
+          "dense_score": 0.6168215274810791,
+          "rrf_score": 0.030798389007344232,
+          "rrf_rank": 1,
+          "rerank_score": 4.802325248718262,
+          "score": 4.802325248718262,
+          "rank": 1,
+          "retrieval_method": "hybrid"
+        },
+        {
+          "chunk_id": "NIKE_2019_10K:p68:c1",
+          "doc_name": "NIKE_2019_10K",
+          "company": "Nike",
+          "fiscal_year": 2019,
+          "page_index": 67,
+          "pdf_page": 68,
+          "bm25_rank": 11,
+          "bm25_score": 14.74140908201909,
+          "dense_rank": 26,
+          "dense_score": 0.5594491958618164,
+          "rrf_score": 0.02571241401899771,
+          "rrf_rank": 7,
+          "rerank_score": 1.0498230457305908,
+          "score": 1.0498230457305908,
+          "rank": 2,
+          "retrieval_method": "hybrid"
+        }
+      ],
+      "reference_pages": [
+        [
+          "NIKE_2019_10K",
+          54
+        ]
+      ],
+      "first_matching_rank": 1
+    }
+  ]
+}

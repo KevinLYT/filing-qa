@@ -1,0 +1,239 @@
+[
+  {
+    "doc_name": "3M_2018_10K",
+    "pdf_pages": 160,
+    "chunks": 262,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "ADOBE_2016_10K",
+    "pdf_pages": 112,
+    "chunks": 189,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "AMAZON_2019_10K",
+    "pdf_pages": 83,
+    "chunks": 132,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "GENERALMILLS_2020_10K",
+    "pdf_pages": 127,
+    "chunks": 200,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "LOCKHEEDMARTIN_2021_10K",
+    "pdf_pages": 136,
+    "chunks": 252,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "NIKE_2019_10K",
+    "pdf_pages": 104,
+    "chunks": 174,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "ACTIVISIONBLIZZARD_2019_10K",
+    "pdf_pages": 198,
+    "chunks": 299,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "AMAZON_2017_10K",
+    "pdf_pages": 85,
+    "chunks": 140,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "AMCOR_2020_10K",
+    "pdf_pages": 195,
+    "chunks": 269,
+    "empty_pdf_pages": [
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188
+    ]
+  },
+  {
+    "doc_name": "AMD_2015_10K",
+    "pdf_pages": 215,
+    "chunks": 352,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "AMERICANWATERWORKS_2020_10K",
+    "pdf_pages": 152,
+    "chunks": 279,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "AMERICANWATERWORKS_2021_10K",
+    "pdf_pages": 181,
+    "chunks": 305,
+    "empty_pdf_pages": [
+      151,
+      153,
+      155,
+      157
+    ]
+  },
+  {
+    "doc_name": "BESTBUY_2017_10K",
+    "pdf_pages": 109,
+    "chunks": 174,
+    "empty_pdf_pages": [
+      101
+    ]
+  },
+  {
+    "doc_name": "BESTBUY_2019_10K",
+    "pdf_pages": 107,
+    "chunks": 171,
+    "empty_pdf_pages": [
+      21,
+      100
+    ]
+  },
+  {
+    "doc_name": "BLOCK_2020_10K",
+    "pdf_pages": 158,
+    "chunks": 252,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "BOEING_2018_10K",
+    "pdf_pages": 136,
+    "chunks": 186,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "COCACOLA_2021_10K",
+    "pdf_pages": 183,
+    "chunks": 324,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "CORNING_2021_10K",
+    "pdf_pages": 125,
+    "chunks": 203,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "COSTCO_2021_10K",
+    "pdf_pages": 76,
+    "chunks": 110,
+    "empty_pdf_pages": [
+      1
+    ]
+  },
+  {
+    "doc_name": "LOCKHEEDMARTIN_2022_10K",
+    "pdf_pages": 130,
+    "chunks": 232,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "MGMRESORTS_2018_10K",
+    "pdf_pages": 188,
+    "chunks": 307,
+    "empty_pdf_pages": [
+      143
+    ]
+  },
+  {
+    "doc_name": "MGMRESORTS_2020_10K",
+    "pdf_pages": 150,
+    "chunks": 269,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "MICROSOFT_2016_10K",
+    "pdf_pages": 121,
+    "chunks": 194,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "NETFLIX_2015_10K",
+    "pdf_pages": 72,
+    "chunks": 112,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "NETFLIX_2017_10K",
+    "pdf_pages": 73,
+    "chunks": 115,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "NIKE_2018_10K",
+    "pdf_pages": 97,
+    "chunks": 181,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "PEPSICO_2021_10K",
+    "pdf_pages": 549,
+    "chunks": 638,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "PEPSICO_2022_10K",
+    "pdf_pages": 503,
+    "chunks": 645,
+    "empty_pdf_pages": []
+  },
+  {
+    "doc_name": "WALMART_2019_10K",
+    "pdf_pages": 155,
+    "chunks": 196,
+    "empty_pdf_pages": [
+      90,
+      92,
+      94,
+      96,
+      98,
+      100,
+      102,
+      104,
+      106,
+      108,
+      110,
+      112,
+      114,
+      116,
+      118,
+      120,
+      122,
+      124,
+      126,
+      128,
+      130,
+      132,
+      134,
+      136,
+      138,
+      140,
+      142,
+      144,
+      146
+    ]
+  },
+  {
+    "doc_name": "WALMART_2020_10K",
+    "pdf_pages": 170,
+    "chunks": 270,
+    "empty_pdf_pages": [
+      54
+    ]
+  }
+]

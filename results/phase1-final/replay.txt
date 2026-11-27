@@ -1,0 +1,37 @@
+SAVED RUN | financebench_id_03031
+
+QUESTION
+What is Lockheed Martin's FY2021 net working capital? Define net working capital as total current assets less total current liabilities. Answer in USD millions. Respond to the question by assuming the perspective of an investment analyst who can only use the details shown within the balance sheet.
+
+B0 | qwen2.5-3b-instruct-q4_k_m.gguf | answered
+Prediction: 3000000000 USD_millions
+Explanation: To calculate Lockheed Martin's FY2021 net working capital, we need to find the total current assets and total current liabilities from the balance sheet. Total current assets include cash and cash equivalents, accounts receivable, inventory, and other current assets. Total current liabilities include accounts payable, short-term debt, and other current liabilities.
+Numeric grade: incorrect  {"predicted": "3000000000000000", "predicted_unit": "USD", "gold": "5818000000.00", "gold_unit": "USD", "absolute_error": "2999994182000000.00", "allowed_absolute_error": "58180000.0000"}
+Citations: auto=fail | human=not_applicable
+  Total current assets: $11,000,000,000 | $11,000,000,000 | Lockheed:108
+  Total current liabilities: $8,000,000,000 | $8,000,000,000 | Lockheed:108
+Calls: 1 | seconds: 2.8747 | API USD: 0
+Usage: {"completion_tokens": 305, "prompt_tokens": 365, "total_tokens": 670}
+
+B1 | qwen2.5-3b-instruct-q4_k_m.gguf | answered
+  #1 LOCKHEEDMARTIN_2021_10K:p68:c1  BM25=44.5714
+  #2 LOCKHEEDMARTIN_2021_10K:p78:c1  BM25=37.5578
+  #3 LOCKHEEDMARTIN_2021_10K:p34:c2  BM25=33.7373
+  #4 LOCKHEEDMARTIN_2021_10K:p30:c1  BM25=28.7328
+  Extract from LOCKHEEDMARTIN_2021_10K:p68:c1:
+    (in millions, except par value)
+    2021  2020
+    Total current assets  19,815  19,378
+    Total current liabilities  13,997  13,933
+Prediction: 5838 USD_millions
+Explanation: To find Lockheed Martin's FY2021 net working capital, we need to calculate total current assets minus total current liabilities. From the balance sheet, we have total current assets of $19,815 million and total current liabilities of $13,997 million.
+Numeric grade: correct  {"predicted": "5838000000", "predicted_unit": "USD", "gold": "5818000000.00", "gold_unit": "USD", "absolute_error": "20000000.00", "allowed_absolute_error": "58180000.0000"}
+Citations: auto=fail | human=pending
+  Total current assets 19,815 | 19,815 | LOCKHEEDMARTIN_2021_10K:2021-12-31-current-assets
+  Total current liabilities 13,997 | 13,997 | LOCKHEEDMARTIN_2021_10K:2021-12-31-current-liabilities
+Calls: 1 | seconds: 2.7749 | API USD: 0
+Usage: {"completion_tokens": 318, "prompt_tokens": 4038, "total_tokens": 4356}
+
+AFTER SCORING | reference visible only to the evaluator
+Official answer: $5818.00 (USD millions)
+19,815 - 13,997 = 5,818 USD millions | PDF page 68

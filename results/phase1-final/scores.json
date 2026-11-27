@@ -1,0 +1,696 @@
+{
+  "summary": {
+    "B0": {
+      "n": 7,
+      "correct": 0,
+      "incorrect": 7,
+      "refusal": 0,
+      "api_error": 0,
+      "parse_error": 0,
+      "input_error": 0,
+      "missing_prediction": 0,
+      "accuracy": 0.0,
+      "automatic_citation": {
+        "fail": 4,
+        "not_applicable": 3
+      },
+      "human_review": {
+        "not_applicable": 7
+      },
+      "model_calls_recorded": 7,
+      "latencies_recorded": 7,
+      "mean_elapsed_seconds": 1.9546,
+      "usage_records": 7,
+      "prompt_tokens_recorded": 2475,
+      "completion_tokens_recorded": 1475,
+      "estimated_api_usd": "0",
+      "mean_estimated_api_usd": "0"
+    },
+    "B1": {
+      "n": 7,
+      "correct": 5,
+      "incorrect": 0,
+      "refusal": 2,
+      "api_error": 0,
+      "parse_error": 0,
+      "input_error": 0,
+      "missing_prediction": 0,
+      "accuracy": 0.7142857142857143,
+      "automatic_citation": {
+        "fail": 4,
+        "not_applicable": 2,
+        "pass": 1
+      },
+      "human_review": {
+        "pending": 5,
+        "not_applicable": 2
+      },
+      "model_calls_recorded": 7,
+      "latencies_recorded": 7,
+      "mean_elapsed_seconds": 2.4073,
+      "usage_records": 7,
+      "prompt_tokens_recorded": 21768,
+      "completion_tokens_recorded": 1479,
+      "estimated_api_usd": "0",
+      "mean_estimated_api_usd": "0"
+    }
+  },
+  "rows": [
+    {
+      "question_id": "financebench_id_03031",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "3000000000000000",
+        "predicted_unit": "USD",
+        "gold": "5818000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "2999994182000000.00",
+        "allowed_absolute_error": "58180000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "Lockheed Martin 2021 10-K",
+            "pdf_page": 108,
+            "chunk_id": "Lockheed:108",
+            "label": "Total current assets: $11,000,000,000",
+            "raw_number": "$11,000,000,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Lockheed Martin 2021 10-K",
+            "pdf_page": 108,
+            "chunk_id": "Lockheed:108",
+            "label": "Total current liabilities: $8,000,000,000",
+            "raw_number": "$8,000,000,000",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "missing_reference_operands": [
+          "19,815",
+          "13,997"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "LOCKHEEDMARTIN_2021_10K",
+          68
+        ]
+      ],
+      "gold_page_hits": null,
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03029",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "1000000000",
+        "predicted_unit": "USD",
+        "gold": "1577000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "577000000.00",
+        "allowed_absolute_error": "15770000.0000"
+      },
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "3M_2018_10K",
+          60
+        ]
+      ],
+      "gold_page_hits": null,
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04672",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "11400000000.0",
+        "predicted_unit": "USD",
+        "gold": "8700000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "2700000000.00",
+        "allowed_absolute_error": "87000000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "10-K: 3M Company 2018 Annual Report",
+            "pdf_page": 124,
+            "chunk_id": "3M:10-K-2018-124-1",
+            "label": "Net Profit and Net Earnings (in USD billions)",
+            "raw_number": "11.4",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "missing_reference_operands": [
+          "8,738"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "3M_2018_10K",
+          58
+        ]
+      ],
+      "gold_page_hits": null,
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_07507",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "2.8",
+        "predicted_unit": "percentage_points",
+        "gold": "65.4",
+        "gold_unit": "percent",
+        "reason": "incompatible_units"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "Adobe_Income_Statement_FY2015",
+            "pdf_page": 12,
+            "chunk_id": "Adobe_Income_Statement_FY2015:12",
+            "label": "Operating income for FY2015",
+            "raw_number": "1,044,000,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Adobe_Income_Statement_FY2016",
+            "pdf_page": 12,
+            "chunk_id": "Adobe_Income_Statement_FY2016:12",
+            "label": "Operating income for FY2016",
+            "raw_number": "1,070,000,000",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "missing_reference_operands": [
+          "1,493,602",
+          "903,095"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "ADOBE_2016_10K",
+          62
+        ]
+      ],
+      "gold_page_hits": null,
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04854",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "0",
+        "predicted_unit": "USD",
+        "gold": "3215000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "3215000000.00",
+        "allowed_absolute_error": "32150000.0000"
+      },
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "GENERALMILLS_2020_10K",
+          52
+        ]
+      ],
+      "gold_page_hits": null,
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_08286",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "20000000",
+        "predicted_unit": "USD",
+        "gold": "11588000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "11568000000.00",
+        "allowed_absolute_error": "115880000.0000"
+      },
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "AMAZON_2019_10K",
+          38
+        ]
+      ],
+      "gold_page_hits": null,
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03531",
+      "system": "B0",
+      "outcome": "incorrect",
+      "numeric_comparison": {
+        "predicted": "33000000000",
+        "predicted_unit": "USD",
+        "gold": "16525000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "16475000000.00",
+        "allowed_absolute_error": "165250000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "Nike 2019 10-K",
+            "pdf_page": 11,
+            "chunk_id": "Nike:11-12:11.1:Total current assets:11,000",
+            "label": "Total current assets:11,000",
+            "raw_number": "11,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Nike 2019 10-K",
+            "pdf_page": 11,
+            "chunk_id": "Nike:11-12:11.2:Cash and cash equivalents:11,000",
+            "label": "Cash and cash equivalents:11,000",
+            "raw_number": "11,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Nike 2019 10-K",
+            "pdf_page": 11,
+            "chunk_id": "Nike:11-12:11.3:Accounts receivable:11,000",
+            "label": "Accounts receivable:11,000",
+            "raw_number": "11,000",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "Nike 2019 10-K",
+            "pdf_page": 11,
+            "chunk_id": "Nike:11-12:11.4:Inventories:11,000",
+            "label": "Inventories:11,000",
+            "raw_number": "11,000",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "missing_reference_operands": [
+          "16,525"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "NIKE_2019_10K",
+          54
+        ]
+      ],
+      "gold_page_hits": null,
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_03031",
+      "system": "B1",
+      "outcome": "correct",
+      "numeric_comparison": {
+        "predicted": "5838000000",
+        "predicted_unit": "USD",
+        "gold": "5818000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "20000000.00",
+        "allowed_absolute_error": "58180000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "LOCKHEEDMARTIN_2021_10K:p68:c1",
+            "pdf_page": 68,
+            "chunk_id": "LOCKHEEDMARTIN_2021_10K:2021-12-31-current-assets",
+            "label": "Total current assets 19,815",
+            "raw_number": "19,815",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "LOCKHEEDMARTIN_2021_10K:p68:c1",
+            "pdf_page": 68,
+            "chunk_id": "LOCKHEEDMARTIN_2021_10K:2021-12-31-current-liabilities",
+            "label": "Total current liabilities 13,997",
+            "raw_number": "13,997",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "missing_reference_operands": [
+          "19,815",
+          "13,997"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "LOCKHEEDMARTIN_2021_10K",
+          68
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "LOCKHEEDMARTIN_2021_10K",
+          68
+        ]
+      ],
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_03029",
+      "system": "B1",
+      "outcome": "correct",
+      "numeric_comparison": {
+        "predicted": "1577000000",
+        "predicted_unit": "USD",
+        "gold": "1577000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "0.00",
+        "allowed_absolute_error": "15770000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "3M_2018_10K",
+            "pdf_page": 43,
+            "chunk_id": "3M_2018_10K:p43:c1",
+            "label": "Years ended December 31, (Millions) 2018 2017 2016 Net cash used in investing activities (1,577) (1,373) (1,420)",
+            "raw_number": "-1,577",
+            "visible": true,
+            "number_found": false
+          }
+        ],
+        "missing_reference_operands": [
+          [
+            "(1,577)",
+            "1,577"
+          ]
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "3M_2018_10K",
+          60
+        ]
+      ],
+      "gold_page_hits": [],
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_04672",
+      "system": "B1",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "3M_2018_10K",
+          58
+        ]
+      ],
+      "gold_page_hits": [],
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_07507",
+      "system": "B1",
+      "outcome": "refusal",
+      "numeric_comparison": null,
+      "automatic_citation": {
+        "status": "not_applicable",
+        "checks": []
+      },
+      "gold_pdf_pages": [
+        [
+          "ADOBE_2016_10K",
+          62
+        ]
+      ],
+      "gold_page_hits": [],
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "not_applicable"
+      }
+    },
+    {
+      "question_id": "financebench_id_04854",
+      "system": "B1",
+      "outcome": "correct",
+      "numeric_comparison": {
+        "predicted": "3215400000.0",
+        "predicted_unit": "USD",
+        "gold": "3215000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "400000.00",
+        "allowed_absolute_error": "32150000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "GENERALMILLS_2020_10K",
+            "pdf_page": 17,
+            "chunk_id": "p17:c1",
+            "label": "Fiscal Year 2020 Net cash provided by operating activities (e) $ 3,676.2 $ 2,807.0 $ 2,841.0 $ 2,415.2 $ 2,764.2",
+            "raw_number": "$ 3,676.2",
+            "visible": false,
+            "number_found": false
+          },
+          {
+            "doc_name": "GENERALMILLS_2020_10K",
+            "pdf_page": 17,
+            "chunk_id": "p17:c1",
+            "label": "Fiscal Year 2020 Capital expenditures 460.8 537.6 622.7 684.4 729.3",
+            "raw_number": "$ 460.8",
+            "visible": false,
+            "number_found": false
+          }
+        ],
+        "missing_reference_operands": [
+          "3,676.2",
+          [
+            "(460.8)",
+            "460.8"
+          ]
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "GENERALMILLS_2020_10K",
+          52
+        ]
+      ],
+      "gold_page_hits": [],
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_08286",
+      "system": "B1",
+      "outcome": "correct",
+      "numeric_comparison": {
+        "predicted": "11588000000",
+        "predicted_unit": "USD",
+        "gold": "11588000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "0.00",
+        "allowed_absolute_error": "115880000.0000"
+      },
+      "automatic_citation": {
+        "status": "pass",
+        "checks": [
+          {
+            "doc_name": "AMAZON_2019_10K",
+            "pdf_page": 39,
+            "chunk_id": "AMAZON_2019_10K:p39:c1",
+            "label": "2019 Net income $ 11,588",
+            "raw_number": "11,588",
+            "visible": true,
+            "number_found": true
+          }
+        ],
+        "missing_reference_operands": []
+      },
+      "gold_pdf_pages": [
+        [
+          "AMAZON_2019_10K",
+          38
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "AMAZON_2019_10K",
+          38
+        ]
+      ],
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    },
+    {
+      "question_id": "financebench_id_03531",
+      "system": "B1",
+      "outcome": "correct",
+      "numeric_comparison": {
+        "predicted": "16525000000",
+        "predicted_unit": "USD",
+        "gold": "16525000000.00",
+        "gold_unit": "USD",
+        "absolute_error": "0.00",
+        "allowed_absolute_error": "165250000.0000"
+      },
+      "automatic_citation": {
+        "status": "fail",
+        "checks": [
+          {
+            "doc_name": "NIKE_2019_10K",
+            "pdf_page": 65,
+            "chunk_id": "NIKE_2019_10K:p65:c1",
+            "label": "Total current assets as of May 31, 2019",
+            "raw_number": "16,525",
+            "visible": true,
+            "number_found": false
+          }
+        ],
+        "missing_reference_operands": [
+          "16,525"
+        ]
+      },
+      "gold_pdf_pages": [
+        [
+          "NIKE_2019_10K",
+          54
+        ]
+      ],
+      "gold_page_hits": [
+        [
+          "NIKE_2019_10K",
+          54
+        ]
+      ],
+      "human_review": {
+        "year": null,
+        "line_item": null,
+        "unit": null,
+        "reviewer": null,
+        "notes": "",
+        "status": "pending"
+      }
+    }
+  ]
+}

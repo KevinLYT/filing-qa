@@ -1,0 +1,193 @@
+{
+  "protocol_version": "paired-filing-qa-v4",
+  "baseline_protocol": "explanation-first-v2",
+  "b2_protocol": "single-agent-mcp-v2",
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf",
+  "endpoint": "http://127.0.0.1:18091/v1",
+  "pricing": {
+    "source": "Self-hosted llama.cpp on 127.0.0.1; no provider token charge.",
+    "input": "0",
+    "output": "0",
+    "cached_input": "0",
+    "per_tokens": 1000000,
+    "currency": "USD"
+  },
+  "retrieval": {
+    "method": "hybrid",
+    "agent_chunks_per_search": 2,
+    "hybrid": {
+      "method": "bm25-minilm-rrf-crossencoder-v1",
+      "window_tokens": 192,
+      "overlap_tokens": 32,
+      "dense_max_tokens": 256,
+      "cross_encoder_max_tokens": 512,
+      "rrf_k": 60,
+      "rerank_candidates": 8,
+      "window_aggregation": "max",
+      "backend": "CPUExecutionProvider",
+      "threads": 4,
+      "batch_size": 12,
+      "assets": {
+        "dense": {
+          "model.onnx": "b941bf19f1f1283680f449fa6a7336bb5600bdcd5f84d10ddc5cd72218a0fd21",
+          "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037"
+        },
+        "reranker": {
+          "model.onnx": "c80a8b34256ea453093d612e3ac48d3d965a0c0a48c7906709af8b8e28461bf9",
+          "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"
+        }
+      },
+      "packages": {
+        "numpy": "2.2.6",
+        "onnxruntime": "1.23.2",
+        "tokenizers": "0.22.1"
+      }
+    }
+  },
+  "baseline_retrieval": {
+    "B0": "none",
+    "B1": "BM25 top 4"
+  },
+  "budget": {
+    "max_tool_calls": 6,
+    "max_model_calls": 7,
+    "baseline_model_calls": 1,
+    "temperature": 0,
+    "max_output_tokens_per_call": 800,
+    "max_verification_retries": 1
+  },
+  "python": "3.11.9",
+  "packages": {
+    "langgraph": "1.0.10",
+    "langchain-core": "1.8.4",
+    "langsmith": "0.16.2",
+    "mcp": "1.26.0",
+    "pypdf": "5.9.0",
+    "numpy": "2.2.6",
+    "onnxruntime": "1.23.2",
+    "tokenizers": "0.22.1"
+  },
+  "source_sha256": {
+    "run_baselines.py": "94bc059878a2164602f86f3d3794185fad63566db9cc0263702ecc5aec0d774f",
+    "run_agent.py": "cd4a02289898b511abd0288ed1ce24c44fbd08ee2ea79f3f6dda9c4219b712d5",
+    "run_comparison.py": "91e1d933f9307d6a64c918425103210bcd7373201c13767bfb0ba43d8e924630",
+    "multi_graph.py": "36a47a3b8f02b246ad175cfd59053dacbb7c1ee2b7d08667d428985749b67dd6",
+    "multi_roles.py": "94618c17acd4e5eb21a592d08c6d2cbe75520a3b32776be5bfc75512e19bf3d5",
+    "retrieve_b1.py": "7338d20d4578b88e7cc62a106fc2c46adca1740bbdb8a8c196a37d2110b1815d",
+    "filing_mcp.py": "d2f8d650aae998f7a64d12f973d6b585bf882da62e874a0aa8c3b404584253c4",
+    "filing_tools.py": "c7e1dd58330d8a3b26986d92e4b5f82da024fbb6cef7fe3e295d2ad5c7befe77",
+    "filing_numbers.py": "7193f4492f944e4b20a165f852cd99dc3243dd2abb193138cc00aefbd5eef3f6",
+    "start_qwen.ps1": "da6d1fb3f8962f75b23744721ae13d4b27f39ae5b6dd0af1b9115e09d0b34229",
+    "hybrid_search.py": "6d5b24200c055121c58d92f8c197c177013bdc2e89c2e825648e60c0434e8e5a",
+    "setup_retrieval.py": "89ec52df03a4f67ab3342f0aeeb3fc7e95cd48df52c79399b9867014c6b660ef"
+  },
+  "local_gguf_sha256": "626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+  "local_llama_server_sha256": "53adb95530de2630377966e042a10d19c26d3a4491e22529585dd4c613e325e0",
+  "mode": "live",
+  "protocol_sha256": "6b1976c831d5efdfe6fb372ef1f472ecf710545cd77e331bceb0c0e310e6cdde",
+  "scope": "dev",
+  "systems": [
+    "B0",
+    "B1",
+    "B2",
+    "Ours",
+    "NoVerifier"
+  ],
+  "order": {
+    "financebench_id_03031": [
+      "B0",
+      "B1",
+      "B2",
+      "Ours",
+      "NoVerifier"
+    ],
+    "financebench_id_03029": [
+      "B1",
+      "B2",
+      "Ours",
+      "NoVerifier",
+      "B0"
+    ],
+    "financebench_id_04672": [
+      "B2",
+      "Ours",
+      "NoVerifier",
+      "B0",
+      "B1"
+    ],
+    "financebench_id_07507": [
+      "Ours",
+      "NoVerifier",
+      "B0",
+      "B1",
+      "B2"
+    ],
+    "financebench_id_04854": [
+      "NoVerifier",
+      "B0",
+      "B1",
+      "B2",
+      "Ours"
+    ],
+    "financebench_id_08286": [
+      "B0",
+      "B1",
+      "B2",
+      "Ours",
+      "NoVerifier"
+    ],
+    "financebench_id_03531": [
+      "B1",
+      "B2",
+      "Ours",
+      "NoVerifier",
+      "B0"
+    ]
+  },
+  "question_ids": [
+    "financebench_id_03031",
+    "financebench_id_03029",
+    "financebench_id_04672",
+    "financebench_id_07507",
+    "financebench_id_04854",
+    "financebench_id_08286",
+    "financebench_id_03531"
+  ],
+  "input_sha256": "25c8f8f3299713c1cc5e8516593f9a270438c7464c4232945e8a237491f7b0fa",
+  "filing_index_sha256": {
+    "3M_2018_10K": "203c12d3741d96edac3ebb1a9e8b2ac687cc780da68f95e2bc0b35ea2293de7b",
+    "ADOBE_2016_10K": "29f07c03fceba140c5c92e4105f58c2220e181b7989cabb71a4269463db6b51b",
+    "AMAZON_2019_10K": "80787ad4de50ab2ee708c5c98abf813528abc3a8a7a5edebb9253c761d01af29",
+    "GENERALMILLS_2020_10K": "bda292adb14f39f42bfef6fe3d4380786810d13f18edab10297c4f629f9178fd",
+    "LOCKHEEDMARTIN_2021_10K": "1af821a6c9df5e5523cc4cd19b9dd18de74b13540f9c4237847b7c968374f92c",
+    "NIKE_2019_10K": "f2001d6e355e9957c89ae7b92d33fcdaa4b7c88052ae8c0dd15f25e054b73199"
+  },
+  "hybrid_index_signatures": {
+    "3M_2018_10K": {
+      "embedding_fingerprint": "b2ab2f9157170ebb472fa3fe6a6ef6ae7e91c95e4fde185ef339942afd33d7f5",
+      "npz_sha256": "6b145d480d8521b4a2f3bdc18cdbf0d492a73529ff51a2be67906c09ac0f0b26"
+    },
+    "ADOBE_2016_10K": {
+      "embedding_fingerprint": "38fbc3953cf8e29640e442484edd064909e2b6955eae093dba38a2a11d578871",
+      "npz_sha256": "4778cb0156377faea591a75022eec0c635281b43150d9cfb202e65a8de1585b3"
+    },
+    "AMAZON_2019_10K": {
+      "embedding_fingerprint": "8a303e7e53c3486b9bc6801ef0b706fd29926298f2d503d8dcf8234d2dfe0676",
+      "npz_sha256": "e651c7716065110b87cd45a2f089304d001c09c0d81fe4c651dcba93f217d895"
+    },
+    "GENERALMILLS_2020_10K": {
+      "embedding_fingerprint": "ab591eeaec109bb781e6af445519514ee8a67f5f4e3f5d6ffb356c67be8026c1",
+      "npz_sha256": "debe864ceee03f95e368281694e7fbb02013d5b08227434b67333ad478361445"
+    },
+    "LOCKHEEDMARTIN_2021_10K": {
+      "embedding_fingerprint": "95f13828974e018f85ce8ce87358314f4fd3e6416367f9742f6c70ec95c9afb9",
+      "npz_sha256": "4283a7d58a31357397f0fb22e01a3fe762a6c99bcb5d6719023304c8c4d783b2"
+    },
+    "NIKE_2019_10K": {
+      "embedding_fingerprint": "ac27cdcaad681a7452c41f332698dd6a3140a088e901117418bc87e36af3b92f",
+      "npz_sha256": "9645151f6c40b719a77a56d9ffcff00e5ec8795675d4dbd7da1f5c4075314eff"
+    }
+  },
+  "run_sha256": "001e5806da2f634254170f78e17f35359322516387310872eb27b15c45a81961",
+  "started_utc": "2026-11-25T06:27:15.601515+00:00"
+}
